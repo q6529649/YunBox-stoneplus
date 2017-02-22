@@ -5,6 +5,7 @@
 	log.l('%c了解更多 -> https://www.yunclever.com', style);
 })();
 /* menu */
+jQuery(document).ready(function($){var touch=$('#touch-menu');var menu=$('.menu');$(touch).on('click',function(e){e.preventDefault();menu.slideToggle();});$(window).resize(function(){var w=$(window).width();if(w>767&&menu.is(':hidden')){menu.removeAttr('style');}});});
 jQuery(document).ready(function() {
 	if( jQuery(window).width() > 767) {
 	   jQuery('.nav li.dropdown').hover(function() {
@@ -46,41 +47,6 @@ jQuery(document).ready(function () {
 		jQuery("html, body").animate({
 			scrollTop: 0
 		}, 600);
-		return false;
-	});
-	jQuery('#formpostmail').submit(function() {
-		var name = document.getElementById('yourname').value;
-		var mail = document.getElementById('youremail').value;
-		var msg = document.getElementById('yourmessage').value;		
-		if(name!='' && mail!='' && msg!=''){
-			jQuery.ajax({
-				type: 'POST',
-				url: 'http://api.yunclever.com/v2/Public/ybox/?',
-				data:{
-					service: 'Mail.sendMail',
-					title: '您有新的询盘信息',
-					mailto: 'marketing@topillumination.com',
-					content: '客户名称：' + name + '<br/>' + '客户邮箱：' +　mail + '<br/>' + '客户留言：' + msg,
-					ybform: true
-				},		
-				datatype: "json",
-				beforeSend:function(){
-					
-				},          
-				success:function(data){
-					alert('发送成功！');
-					document.getElementById('yourname').value = '';
-					document.getElementById('youremail').value = '';
-					document.getElementById('yourmessage').value = '';					
-				},
-				complete: function(XMLHttpRequest, textStatus){
-				   //alert(XMLHttpRequest.responseText);
-				   //alert(textStatus);
-				},
-				error: function(){
-				}         
-			});
-		}
 		return false;
 	});
 });

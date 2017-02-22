@@ -501,8 +501,8 @@ function kadima_customizer( $wp_customize ) {
 	$wp_customize->add_section(
         'portfolio_section',
         array(
-            'title' => __('Portfolio Options','kadima'),
-            'description' => __('Here you can add Portfolio title,description and even portfolios','kadima'),
+            'title' => __('服务内容模块','kadima'),
+            'description' => __('','kadima'),
 			'panel'=>'kadima_theme_option',
 			'capability'=>'edit_theme_options',
             'priority' => 35,
@@ -534,6 +534,15 @@ function kadima_customizer( $wp_customize ) {
 			'capability' => 'edit_theme_options',
 			'sanitize_callback'=>'kadima_sanitize_text',
 		)
+	);	
+	$wp_customize->add_setting(
+		'kadima_options[port_desc_img]',
+		array(
+			'type'    => 'option',
+			'default'=> $wl_theme_options['port_desc_img'],
+			'capability' => 'edit_theme_options',
+			'sanitize_callback'=>'esc_url_raw',
+		)
 	);
     $wp_customize->add_control( 'show_portfolio', array(
         'label'        => __( 'Enable Portfolio on Home', 'kadima' ),
@@ -553,6 +562,17 @@ function kadima_customizer( $wp_customize ) {
         'section'    => 'portfolio_section',
         'settings'   => 'kadima_options[port_description]'
     ) );
+	$wp_customize->add_control(
+		new WP_Customize_Image_Control(
+			$wp_customize,
+			'port_desc_img',
+			array(
+				'label'      => __( '关于我们模块图片', 'kadima' ),
+				'section'    => 'portfolio_section',
+				'settings'   => 'kadima_options[port_desc_img]'
+			)
+		)
+	);
     for($i=1;$i<=12;$i++){
 		$wp_customize->add_setting(
 			'kadima_options[port_img_'.$i.']',
@@ -657,7 +677,7 @@ function kadima_customizer( $wp_customize ) {
     );
 	/* About Option */
 	$wp_customize->add_section('about_section',array(
-    	'title'=>__('About Options','kadima'),
+    	'title'=>__('关于我们模块','kadima'),
     	'panel'=>'kadima_theme_option',
     	'capability'=>'edit_theme_options',
         'priority' => 35
@@ -673,7 +693,7 @@ function kadima_customizer( $wp_customize ) {
 	);
 	$wp_customize->add_control( 'show_about',
         array(
-    		'label'        => __( 'Enable About in Header', 'kadima' ),
+    		'label'        => __( '在首页启用关于我们模块', 'kadima' ),
     		'type'=>'checkbox',
     		'section'    => 'about_section',
     		'settings'   => 'kadima_options[show_about]'
@@ -690,7 +710,7 @@ function kadima_customizer( $wp_customize ) {
 	);
 	$wp_customize->add_control( 'about_title',
         array(
-    		'label'        => __( 'About Title', 'kadima' ),
+    		'label'        => __( '关于我们模块标题', 'kadima' ),
     		'type'=>'text',
     		'section'    => 'about_section',
     		'settings'   => 'kadima_options[about_title]',
@@ -706,11 +726,31 @@ function kadima_customizer( $wp_customize ) {
 		)
 	);
 	$wp_customize->add_control( 'about_description', array(
-		'label'        => __( 'About Description', 'kadima' ),
+		'label'        => __( '关于我们模块描述', 'kadima' ),
 		'type'=>'textarea',
 		'section'    => 'about_section',
 		'settings'   => 'kadima_options[about_description]'
 	) );
+	$wp_customize->add_setting(
+		'kadima_options[about_img]',
+		array(
+			'type'    => 'option',
+			'default'=> $wl_theme_options['about_img'],
+			'capability' => 'edit_theme_options',
+			'sanitize_callback'=>'esc_url_raw',
+		)
+	);
+	$wp_customize->add_control(
+		new WP_Customize_Image_Control(
+			$wp_customize,
+			'about_img',
+			array(
+				'label'      => __( '关于我们模块图片', 'kadima' ),
+				'section'    => 'about_section',
+				'settings'   => 'kadima_options[about_img]'
+			)
+		)
+	);
     for($i=1;$i<=12;$i++){
         $wp_customize->add_setting(
 			'kadima_options[about_slide_img_'.$i.']',
