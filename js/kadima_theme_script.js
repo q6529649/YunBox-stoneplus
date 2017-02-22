@@ -59,3 +59,10 @@ jQuery.browser = {};
 		jQuery.browser.version = RegExp.$1;
 	}
 })();
+
+jQuery(document).ready(function(){
+	jQuery('.flexslider').flexslider({
+		directionNav: true,
+		pauseOnAction: false
+	});
+});

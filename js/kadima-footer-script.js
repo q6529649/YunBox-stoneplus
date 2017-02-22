@@ -13,10 +13,3 @@ jQuery('span.menu').click(function() {
 		// Animation complete.
 	});
 });
-					
-jQuery(document).ready(function(){
-	jQuery('.flexslider').flexslider({
-		directionNav: true,
-		pauseOnAction: false
-	});
-});

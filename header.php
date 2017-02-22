@@ -36,19 +36,18 @@
 <body <?php body_class(); ?>>
 
 <div>
-
 	<div class="flexslider">
 		<div class="container">
 			<div class="header">
 				<div class="col-md-4">
 					<a href="<?php echo esc_url(home_url( '/' )); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
 						<?php if($wl_theme_options['upload_image_logo']){ ?>
-							<img class="img-responsive" src="<?php echo $wl_theme_options['upload_image_logo']; ?>" style="height:<?php if($wl_theme_options['height']!='') { echo $wl_theme_options['height']; }  else { "80"; } ?>px; width:<?php if($wl_theme_options['width']!='') { echo $wl_theme_options['width']; }  else { "200"; } ?>px;" />
+							<img class="img-responsive" src="<?php echo $wl_theme_options['upload_image_logo']; ?>" style="margin-top: 2.5em; height:<?php if($wl_theme_options['height']!='') { echo $wl_theme_options['height']; }  else { "80"; } ?>px; width:<?php if($wl_theme_options['width']!='') { echo $wl_theme_options['width']; }  else { "200"; } ?>px;" />
 						<?php } ?>
 					</a>
 				</div>
 				<div class="col-md-8">
-					<nav class="navbar navbar-default " role="navigation">
+					<nav class="navbar navbar-default " role="navigation" style="width: 100%;">
 						<div class="navbar-header">
 							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
 							  <span class="sr-only"><?php _e('Toggle navigation','kadima');?></span>

@@ -906,22 +906,23 @@ a.btn.btn-primary.btn-lg.see-button.hvr-shutter-out-horizontal {
     margin:0 .5em;
 }
 .copyright-right ul li a.twitter{
-    background: url(../images/icons.png) no-repeat 0px 0px;
+    background: url(../images/facebook.png) no-repeat 0px 0px;
     height: 24px;
     display: block;
     width: 24px;
+    background-size: cover;
 }
 .copyright-right ul li a.facebook{
-    background: url(../images/icons.png) no-repeat -33px 0px;
+    background: url(../images/twitter.png) no-repeat -0px 0px;
+    background-size: cover;
 }
 .copyright-right ul li a.chrome{
-    background: url(../images/icons.png) no-repeat -66px 0px;
-}
-.copyright-right ul li a.pinterest{
-    background: url(../images/icons.png) no-repeat -99px 0px;
+    background: url(../images/linkedin.png) no-repeat -0px 0px;
+    background-size: cover;
 }
 .copyright-right ul li a.linkedin{
-    background: url(../images/icons.png) no-repeat -132px 0px;
+    background: url(../images/google.png) no-repeat -0px 0px;
+    background-size: cover;
 }
 .copyright-right ul li a.dribbble{
     background: url(../images/icons.png) no-repeat -164px 0px;

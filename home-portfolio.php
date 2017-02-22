@@ -11,9 +11,20 @@
 			</div>
 			<div class="col-md-5 specialty-grids ">
 				<div class="specialty-grids-top">
-					<?php for($i=1 ; $i<=4; $i++) { ?>
+					<?php for($i=1 ; $i<=4; $i++) { ?>						
 						<div class="col-md-6 service-box wow fadeInRight animated animated" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInRight;">
-							<figure class="icon icon2 color">
+							<?php
+							if($i==2 || $i==3){
+							?>
+								<figure class="icon icon2 color" style="background: #cecccc !important;">
+							<?php	
+							}
+							else {
+							?>
+								<figure class="icon icon2 color">
+							<?php
+							}
+							?>
 								<img src="<?php echo esc_url($wl_theme_options['port_img_'.$i]); ?>" alt="">
 								<h5><?php echo esc_attr($wl_theme_options['port_title_'.$i]); ?></h5>
 							</figure>

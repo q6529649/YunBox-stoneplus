@@ -2944,3 +2944,33 @@ table td {
         display: none;
     }
 }
+
+
+i.indicate {
+    width: 25px;
+    height: 25px;
+    background: url(./images/email.png) no-repeat 0px 0px;
+    background-size: contain;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+i.phone {
+    width: 25px;
+    height: 25px;
+    background: url(./images/tel.png) no-repeat 0px 0px;
+    display: inline-block;
+    vertical-align: middle;
+    background-size: contain;
+    margin-right: 5px;
+	margin-top:0;
+}
+i.message {
+    width: 25px;
+    height: 25px;
+    background: url(./images/what.png) no-repeat 0px 0px;
+    display: inline-block;
+    vertical-align: middle;
+    background-size: contain;
+    margin-right: 5px;
+}
