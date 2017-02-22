@@ -2346,14 +2346,12 @@ span.menu {
 .top-nav ul  li.active{
     background: #bb1e10;
 }
-.top-nav ul li a{
-   
+.top-nav ul li a{   
     font-size: 18px;
     margin-right: .4em;
     float: left;
     padding: 3em 1.4em 3em 1.4em;
     text-align: center;
-   
 }
 .top-nav ul li a i{
     display: block;
@@ -2820,7 +2818,6 @@ a.btn.btn-primary.btn-lg.see-button.hvr-shutter-out-horizontal {
     background: #FAFAFA;
 }
 .specialty-info h3{
-   
     font-size: 40px;
     font-weight: 300;
     margin: 0;
@@ -2894,7 +2891,6 @@ a.btn.btn-primary.btn-lg.see-button.hvr-shutter-out-horizontal {
     font-size: 17px;
     font-weight: 600;
     margin: 1.4em !important;
-    margin: .4em 0;
 }
 .service-box p{
     color: #333333;
@@ -2953,7 +2949,6 @@ a.btn.btn-primary.btn-lg.see-button.hvr-shutter-out-horizontal {
     padding: 4em 0;
 }
 .news-text h3 {
-  
     font-size: 40px;
     font-weight: 300;
     margin: 0;

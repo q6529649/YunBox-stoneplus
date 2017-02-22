@@ -1,7 +1,7 @@
 <?php $wl_theme_options = kadima_get_options(); ?>
 	<div style="background-color: #333;">
-		<div class="col-md-12" style="background-color: #eeeeee;">
-			<div class="col-md-6 col-md-offset-4">
+		<div class="col-md-12" style="background-color: #454449;padding-top: 18px;padding-bottom: 10px;">
+			<div class="col-md-6 col-md-offset-3">
 				<nav class="navbar navbar-default " role="navigation">
 					<div id="menu" class="collapse navbar-collapse">
 						<?php
@@ -73,7 +73,6 @@
 					</div>
 				</div>
 			</div>
-		
 		</div>
 	</div>
 </div>
