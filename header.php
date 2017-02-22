@@ -40,34 +40,35 @@
 	<div class="flexslider">
 		<div class="container">
 			<div class="header">
-				<div class="head-logo">
+				<div class="col-md-4">
 					<a href="<?php echo esc_url(home_url( '/' )); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
 						<?php if($wl_theme_options['upload_image_logo']){ ?>
 							<img class="img-responsive" src="<?php echo $wl_theme_options['upload_image_logo']; ?>" style="height:<?php if($wl_theme_options['height']!='') { echo $wl_theme_options['height']; }  else { "80"; } ?>px; width:<?php if($wl_theme_options['width']!='') { echo $wl_theme_options['width']; }  else { "200"; } ?>px;" />
 						<?php } ?>
 					</a>
 				</div>
-				<nav class="navbar navbar-default " role="navigation">
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
-						  <span class="sr-only"><?php _e('Toggle navigation','kadima');?></span>
-						  <span class="icon-bar"></span>
-						  <span class="icon-bar"></span>
-						  <span class="icon-bar"></span>
-						</button>
-					</div>
-				</nav>
-				<div class="top-nav">
-					<?php
-						wp_nav_menu( array(
-							'theme_location' => 'primary',
-							'menu_class' => 'nav1',
-							'walker' => new kadima_nav_new_walker(),
-							)
-						);
-					?>
+				<div class="col-md-8">
+					<nav class="navbar navbar-default " role="navigation">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+							  <span class="sr-only"><?php _e('Toggle navigation','kadima');?></span>
+							  <span class="icon-bar"></span>
+							  <span class="icon-bar"></span>
+							  <span class="icon-bar"></span>
+							</button>
+						</div>
+						<div class="top-nav">
+							<?php
+								wp_nav_menu( array(
+									'theme_location' => 'primary',
+									'menu_class' => 'nav1',
+									'walker' => new kadima_nav_new_walker(),
+									)
+								);
+							?>
+						</div>
+					</nav>
 				</div>
-				<div class="clearfix"></div>
 			</div>
 		</div>
 		<ul class="slides">
