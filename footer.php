@@ -17,8 +17,30 @@
 				</nav>
 			</div>
 		</div>
-		<div class="col-md-12" style="background-color: #454449;padding-top: 18px;padding-bottom: 10px;">
-			<div class="copyright-right " data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; ">
+		<div class="col-md-12" style=";text-align: center;background-color: #d4d4d4;padding:0;">
+		<div style="background-color: #eeeeee;">
+		<div class="container" style="border-top: 1px solid #aaaaaa;margin-bottom: 15px;background-color: #eeeeee;padding-top:10px;">
+			<div class="col-md-3" >
+			<ul style=";padding: 0;">
+					<li style="display: inline-block;padding: 0.1em 0;"><i class="indicate"></i></li>
+					<li style="display: inline-block;padding: 0.1em 0;"><p style="font-size: 13px;font-weight: bolder;" class="label1">0086-592-6218808</p></li>
+			</ul>
+			</div>
+			<div class="col-md-3" >
+			<ul style=";padding: 0;" style=";padding: 0;margin-top: 1.5em;">
+					<li style="display: inline-block;padding: 0.1em 0;"><i class="phone"></i></li>
+					<li style="display: inline-block;padding: 0.1em 0;"><p style="font-size: 13px;font-weight: bolder;" class="label1">info@stoneplus.cn</p></li>
+			</ul>
+			</div>
+			<div class="col-md-6" >
+			<ul style=";padding: 0;" style=";padding: 0;margin-top: 1.5em;">
+					<li style="display: inline-block;padding: 0.1em 0;"><i class="message"></i></li>
+					<li style="display: inline-block;padding: 0.1em 0;"><p style="font-size: 13px;font-weight: bolder;" class="label1">No.3 Of Plant 6.Dongren Road,Xinglin,Jimei Dist.,Xiamen,Fujian,China(Mainland)</p></li>
+			</ul>
+			</div>
+		</div>
+		</div>
+			<div class="copyright-right " data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s;padding-bottom: 10px; ">
 				<div class="container">
 					<div class="col-md-9" style="float:left;padding:0;">
 						<p class="kadima_footer_copyright_info" >
@@ -51,7 +73,6 @@
 					</div>
 				</div>
 			</div>
-			<div class="clearfix"></div>
 		</div>
 	</div>
 </div>
