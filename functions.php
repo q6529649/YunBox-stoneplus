@@ -727,4 +727,11 @@
 	    );
 	}
 	//smilies_reset();
+	add_filter( 'loop_shop_per_page', create_function( '$cols', 'return 12;' ), 20 );
+	add_filter('loop_shop_columns', 'loop_columns');
+	if (!function_exists('loop_columns')) {
+    		function loop_columns() {
+      	  		return 3;
+    		}
+	}
 ?>
