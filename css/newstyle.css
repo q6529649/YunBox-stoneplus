@@ -1589,6 +1589,13 @@ span.menu {
     background-color: #f4a82f;
     border-color: #f4a82f;
 }
+
+.woocommerce ul.products li.product, .woocommerce-page ul.products li.product{
+	margin: 0 5.8% 2.992em 5% !important;
+}
+.kadima_blog_wrapper .col-md-9 h1{
+	    text-align: center;
+}
 /*main_btm1 end*/
 .news-grids .news-info a:visited{color:#000}
 @media screen and (max-width: 1024px) {

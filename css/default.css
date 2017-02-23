@@ -15,8 +15,11 @@
     background-color: #fff;
     border-top: 2px solid #31A3DD;
 }
-.navbar-default .navbar-nav> .active> a, .navbar-default .navbar-nav> .active> a:hover, .navbar-default .navbar-nav> .active> a:focus, .dropdown-menu .active a {
+/*.navbar-default .navbar-nav> .active> a, .navbar-default .navbar-nav> .active> a:hover, .navbar-default .navbar-nav> .active> a:focus, .dropdown-menu .active a {
     background-color: #31A3DD;
+}*/
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+	background-color: #eeeeee;
 }
 .collapse ul.nav li.current-menu-parent .dropdown-toggle, .collapse ul.nav li.current-menu-item .dropdown-toggle, .navbar-default .navbar-collapse ul.nav li.current-menu-parent .dropdown-toggle, .navbar-default .navbar-collapse ul.nav li.current-menu-item .dropdown-toggle .collapse ul.nav li.current_page_ancestor .dropdown-toggle, .collapse ul.nav li.current_page_ancestor .dropdown-toggle, .navbar-default .navbar-collapse ul.nav li.current_page_ancestor .dropdown-toggle, .navbar-default .navbar-collapse ul.nav li.current_page_ancestor .dropdown-toggle {
     background-color: #31A3DD;
@@ -292,13 +295,13 @@
     color: #31A3DD;
 }
 .kadima_sidebar_widget {
-    border-left: 3px solid #31A3DD;
-    border-right: 3px solid #31A3DD;
-    border-bottom: 3px solid #31A3DD;
+    border-left: 3px solid #f4a82f;
+    border-right: 3px solid #f4a82f;
+    border-bottom: 3px solid #f4a82f;
     background-color: #ffffff;
 }
 .kadima_sidebar_widget_title {
-    background: #31A3DD;
+    background: #f4a82f;
 }
 .kadima_sidebar_link p a:hover, .kadima_sidebar_widget ul li a:hover {
     color: #31A3DD;
@@ -487,7 +490,7 @@
     background-color: #31A3DD !important;
 }
 .btn-search {
-    background: #31A3DD !important;
+    background: #f4a82f !important;
 }
 .nav-pills> li> a {
     border: 3px solid #31A3DD !important;
@@ -600,12 +603,10 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-border-radius: 0px;
     -moz-border-radius: 0px;
     border-radius: 0px;
-    -webkit-box-shadow: 3px 3px 0 rgba(201, 201, 201, 1);
-    -moz-box-shadow: 3px 3px 0 rgba(201, 201, 201, 1);
-    box-shadow: 3px 3px 0 rgba(201, 201, 201, 1);
-    color: #fff;
+ 
+    color: #f4a82f;
     font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
-    font-weight: normal;
+    font-weight: bold;
     font-size: 15px;
 }
 .navbar-default .navbar-nav> .open> a, .navbar-default .navbar-nav> .open> a:hover, .navbar-default .navbar-nav> .open> a:focus {
