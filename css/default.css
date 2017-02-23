@@ -121,15 +121,15 @@
     text-decoration: none;
 }
 .kadima_carousel-prev, .kadima_carousel-next {
-    background-color: #fff;
-    border: 2px solid #31A3DD;
+    background-color: #c9c9c9;
+    border: 2px solid #c9c9c9;
 }
 .kadima_carousel-prev:hover, .kadima_carousel-next:hover {
-    background-color: #31A3DD;
+    background-color: #fff;
     color: #fff;
 }
 .kadima_carousel-prev:hover i, .kadima_carousel-next:hover i {
-    color: #fff;
+    color: #c9c9c9;
 }
 .kadima_carousel-prev i, .kadima_carousel-next i {
     color: #31A3DD;
@@ -197,11 +197,11 @@
 
 /** blog thumbnail css **/
 
-.kadima_blog_thumb_wrapper {
+/**.kadima_blog_thumb_wrapper {
     background: #fff;
     border-bottom: 5px solid #31A3DD;
     box-shadow: 0 0 6px rgba(0, 0, 0, .7);
-}
+}**/
 .kadima_blog_thumb_wrapper h2 a {
     color: #31A3DD;
     transition: all 0.4s ease 0s;
@@ -406,7 +406,7 @@
     color: #fff;
 }
 .kadima_carousel-prev i, .kadima_carousel-next i {
-    color: #31A3DD;
+    color: #fff;
 }
 
 /**** About us page Css *************************************************
@@ -642,7 +642,7 @@ h1, h2, h3, h4, h5, h6 {
    
     color: #f4a82f;
     font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
-    font-weight: normal;
+    font-weight: bold;
     font-size: 15px;
 }
 i.indicate {

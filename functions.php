@@ -18,7 +18,7 @@
         wp_enqueue_script('kadima-theme-script', get_template_directory_uri() .'/js/kadima_theme_script.js', array('jquery'));
 		wp_enqueue_script('fliplightbox.min', get_template_directory_uri() .'/js/fliplightbox.min.js', array('jquery'));
 		wp_enqueue_script('jquery.easing.min', get_template_directory_uri() .'/js/jquery.easing.min.js', array('jquery'));
-		wp_enqueue_script('jquery.fancybox-1.21', get_template_directory_uri() .'/js/jquery.fancybox-1.21.js', array('jquery'));
+		//wp_enqueue_script('jquery.fancybox-1.21', get_template_directory_uri() .'/js/jquery.fancybox-1.21.js', array('jquery'));
 		wp_enqueue_script('jquery.flexslider-min', get_template_directory_uri() .'/js/jquery.flexslider-min.js', array('jquery'));
 		wp_enqueue_script('jquery.mixitup.min', get_template_directory_uri() .'/js/jquery.mixitup.min.js', array('jquery'));
 		wp_enqueue_script('responsiveslides.min', get_template_directory_uri() .'/js/responsiveslides.min.js', array('jquery'));
@@ -104,6 +104,7 @@
 		add_theme_support( 'post-thumbnails' );
 		//set_post_thumbnail_size( 160 );
 		register_nav_menu( 'primary', __( 'Primary Menu', 'kadima' ) );
+		register_nav_menu( 'second', __( 'second Menu', 'kadima' ) );
 		$args = array('default-color' => '000000',);
 		add_theme_support( 'custom-background', $args);
 		add_theme_support( 'automatic-feed-links');

@@ -408,7 +408,7 @@ p, .textwidget {
     cursor: pointer;
     display: inline;
     transition: all 0.3s ease 0s;
-    padding: 6px 15px 10px;
+    padding: 45px 15px 45px;
     margin-right: 5px;
 }
 .kadima_carousel-next {
@@ -417,7 +417,7 @@ p, .textwidget {
     cursor: pointer;
     display: inline;
     transition: all 0.3s ease 0s;
-    padding: 6px 15px 10px;
+    padding: 45px 15px 45px;
 }
 .kadima_carousel-prev i, .kadima_carousel-next i {
     font-size: 20px;
@@ -847,11 +847,11 @@ p, .textwidget {
 /** wrapper for front page **/
 
 .kadima_blog_area {
-    padding-top: 90px;
-    padding-bottom: 90px;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 .kadima_blog_wrapper {
-    margin-bottom: 90px;
+    margin-bottom: 0px;
 }
 .kadima_blog_thumb_wrapper {
     margin-bottom: 40px;
@@ -2943,4 +2943,34 @@ table td {
     .carousel-text .kadima_blog_read_btn {
         display: none;
     }
+}
+
+
+i.indicate {
+    width: 25px;
+    height: 25px;
+    background: url(./images/email.png) no-repeat 0px 0px;
+    background-size: contain;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+i.phone {
+    width: 25px;
+    height: 25px;
+    background: url(./images/tel.png) no-repeat 0px 0px;
+    display: inline-block;
+    vertical-align: middle;
+    background-size: contain;
+    margin-right: 5px;
+	margin-top:0;
+}
+i.message {
+    width: 25px;
+    height: 25px;
+    background: url(./images/what.png) no-repeat 0px 0px;
+    display: inline-block;
+    vertical-align: middle;
+    background-size: contain;
+    margin-right: 5px;
 }
