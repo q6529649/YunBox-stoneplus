@@ -290,13 +290,8 @@ p, .textwidget {
     animation-delay: .7s;
 }
 
-/** Service Section  ***************************************************************************************************************
-********************************************************************************************************************************/
+/* Service Section */
 
-.kadima_service {
-    padding-top: 90px;
-    padding-bottom: 90px;
-}
 .kadima_service_area {
     border-radius: 0px;
     margin-bottom: 65px;
@@ -1223,7 +1218,6 @@ p, .textwidget {
     margin-bottom: 30px;
     margin-top: 10px;
     overflow: hidden;
-    box-shadow: 0 0 6px rgba(0, 0, 0, .7);
     padding: 0px 20px 15px 20px;
 }
 .kadima_sidebar_widget_title {
