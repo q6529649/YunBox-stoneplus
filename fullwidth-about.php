@@ -59,7 +59,7 @@
 					<div class="top-nav">
 						<?php
 							wp_nav_menu( array(
-								'theme_location' => 'primary',
+								'theme_location' => 'second',
 								'menu_class' => 'nav1',
 								'walker' => new kadima_nav_new_walker(),
 								)

@@ -1454,6 +1454,9 @@ span.menu {
     padding-right: 10px;
     padding-left: 10px;
 }
+.row .col-md-1{
+	margin-top: 95px;
+}
 /*main_btm1*/
 #filters {
     margin: 4% 1%;

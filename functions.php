@@ -104,6 +104,7 @@
 		add_theme_support( 'post-thumbnails' );
 		//set_post_thumbnail_size( 160 );
 		register_nav_menu( 'primary', __( 'Primary Menu', 'kadima' ) );
+		register_nav_menu( 'second', __( 'second Menu', 'kadima' ) );
 		$args = array('default-color' => '000000',);
 		add_theme_support( 'custom-background', $args);
 		add_theme_support( 'automatic-feed-links');

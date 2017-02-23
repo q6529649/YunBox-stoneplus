@@ -408,7 +408,7 @@ p, .textwidget {
     cursor: pointer;
     display: inline;
     transition: all 0.3s ease 0s;
-    padding: 6px 15px 10px;
+    padding: 45px 15px 45px;
     margin-right: 5px;
 }
 .kadima_carousel-next {
@@ -417,7 +417,7 @@ p, .textwidget {
     cursor: pointer;
     display: inline;
     transition: all 0.3s ease 0s;
-    padding: 6px 15px 10px;
+    padding: 45px 15px 45px;
 }
 .kadima_carousel-prev i, .kadima_carousel-next i {
     font-size: 20px;
