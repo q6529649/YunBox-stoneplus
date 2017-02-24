@@ -625,7 +625,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-right: 7px;
 }
 .navbar-default .navbar-nav> li> a {
-    color: #000;
+    color: #333;
     border-radius: 5px;
     padding-top: 10px;
     padding-bottom: 10px;
