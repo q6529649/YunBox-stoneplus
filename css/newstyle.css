@@ -664,12 +664,6 @@ a.btn.btn-primary.btn-lg.see-button.hvr-shutter-out-horizontal {
     line-height: 1.8em;
     font-weight: 400;
 }
-.specialty-grids-top:nth-child(1) {
-    margin-top: 1em;
-}
-.specialty-grids-top:nth-child(2) {
-    margin-top: 0em;
-}
 .specialty-button{
     margin-top:3em;
 }
@@ -2281,9 +2275,6 @@ span.menu {
     }
     .contact-form {
         padding: 0 !important;
-    }
-    .specialty-grids-top:nth-child(2) {
-        margin-top: 0;
     }
     .specialty-button {
         margin: 0em 0 2em;
