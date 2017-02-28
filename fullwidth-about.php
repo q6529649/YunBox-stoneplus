@@ -37,7 +37,8 @@
 <body <?php body_class(); ?>>
 
 <div>
-	<div class="container">
+	<div style="background-image:url(../wp-content/themes/YunBox-stoneplus/images/top.jpg);background-position:center; background-repeat:repeat-y">
+		<div class="container">
 		<div class="header">
 			<div class="col-md-4">
 				<a href="<?php echo esc_url(home_url( '/' )); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
@@ -70,7 +71,7 @@
 			</div>
 		</div>
 	</div>
-
+	</div>
 	<div class="row kadima_blog_wrapper">
 		<div class="col-md-12">
 			<?php get_template_part('post','page'); ?>	
