@@ -5,26 +5,26 @@
 				
 			</div>
 			<div class="copyright-right col-md-12 " data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s;padding-bottom: 10px;padding-top:10px; ">
-				
-					<div class="col-md-2" style="text-align: right;">
+				<div class="container">
+					<div class="col-md-2">
 						<ul style=";padding: 0;">
 							<li style="display: inline-block;padding: 0.1em 0;"><i class="phone"></i></li>
 							<li style="display: inline-block;padding: 0.1em 0;"><p style="font-size: 13px;font-weight: bolder;" class="label1">0086-592-6218808</p></li>
 						</ul>
 					</div>
-					<div class="col-md-2" style="text-align: right;" >
+					<div class="col-md-2">
 						<ul style=";padding: 0;" style=";padding: 0;margin-top: 1.5em;">
 							<li style="display: inline-block;padding: 0.1em 0;"><i class="message"></i></li>
 							<li style="display: inline-block;padding: 0.1em 0;"><p style="font-size: 13px;font-weight: bolder;" class="label1">info@stoneplus.cn</p></li>
 						</ul>
 					</div>
-					<div class="col-md-5" >
+					<div class="col-md-6" style="padding-left:0;padding-right:0;">
 						<ul style=";padding: 0;" style=";padding: 0;margin-top: 1.5em;">
 							<li style="display: inline-block;padding: 0.1em 0;"><i class="indicate"></i></li>
 							<li style="display: inline-block;padding: 0.1em 0;"><p style="font-size: 13px;font-weight: bolder;" class="label1">No.3 Of Plant 6.Dongren Road,Xinglin,Jimei Dist.,Xiamen,Fujian,China(Mainland)</p></li>
 						</ul>
 					</div>
-					<div class="col-md-3" style="float:right;padding:0;">
+					<div class="col-md-2" style="padding:0;">
 						<ul >
 							<?php if($wl_theme_options['fb_link']!='') { ?>
 								 <li class="twitter" title="Facebook"><a class="twitter" href="<?php echo esc_url($wl_theme_options['fb_link']); ?>"></a></li>
@@ -41,7 +41,7 @@
 							<?php } ?>
 						</ul>
 					</div>
-				
+				</div>
 			</div>		
 		</div>
 	</div>
