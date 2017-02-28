@@ -83,17 +83,18 @@ class kadima_nav_walker extends Walker_Nav_Menu {
 	}
 }
 class kadima_nav_new_walker extends Walker_Nav_Menu {
-	public $co = 1;
 	function start_lvl( &$output, $depth = 0, $args = array() ) {
 		$indent = str_repeat("\t", $depth);
 		$output .= "\n$indent<ul class=\"dropdown-menu\">\n";
 	}
 	function start_el( &$output, $item, $depth = 0, $args = array(), $id = 0 ) {
 		$indent = ( $depth ) ? str_repeat( "\t", $depth ) : '';
+		$classes = empty( $item->classes ) ? array() : (array) $item->classes;		
+		$c_names = $classes[0];		
 		$class_names = $value = '';
-		$class_names = ' class="hvr-sweep-to-bottom"';
+		$class_names = ' class="hvr-sweep-to-bottom"';		
 		//$id = $item->ID;
-		$id = ' id="' . $this->co . '"';
+		$id = ' id="' . $item->ID . '"';
 		$output .= $indent . '<li' . $id . $value . $class_names .'>';
 		$attributes  = ! empty( $item->attr_title ) ? ' title="'  . esc_attr( $item->attr_title ) .'"' : '';
 		$attributes .= ! empty( $item->target )     ? ' target="' . esc_attr( $item->target     ) .'"' : '';
@@ -103,9 +104,8 @@ class kadima_nav_new_walker extends Walker_Nav_Menu {
 		$item_output = $args->before;
 		$item_output .= '<a'. $attributes .'>';
 		$item_output .= $args->link_before . apply_filters( 'the_title', $item->title, $item->ID ) . $args->link_after;
-		$item_output .= ($args->has_children) ? '<i><img src="//stoneplus.site.yunclever.com/wp-content/themes/kadima/images/nav-'.$this->co.'.png" alt=""></i><i class="fa fa-angle-down"></i></a>' : '<i><img src="//stoneplus.site.yunclever.com/wp-content/themes/kadima/images/nav-'.$this->co.'.png" alt=""></i></a>';
+		$item_output .= ($args->has_children) ? '<i><img src="//stoneplus.site.yunclever.com/wp-content/themes/kadima/images/'.$c_names.'.png" alt=""></i><i class="fa fa-angle-down"></i></a>' : '<i><img src="//stoneplus.site.yunclever.com/wp-content/themes/kadima/images/'.$c_names.'.png" alt=""></i></a>';
 		$item_output .= $args->after;
-		$this->co = $this->co + 1;
 		$output .= apply_filters( 'walker_nav_menu_start_el', $item_output, $item, $depth, $args );
 	}
 	function display_element( $element, &$children_elements, $max_depth, $depth=0, $args, &$output ) {

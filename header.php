@@ -32,6 +32,22 @@
 		}
 	?>
 	<?php wp_head(); ?>
+	<script type="text/javascript">
+	  var visitor_id;
+	  var _paq = _paq || [];
+	  _paq.push(["setCookieDomain", "stoneplus.site.yunclever.com"]);
+	  _paq.push(["setDomains", ["stoneplus.site.yunclever.com"]]);
+	  _paq.push(['trackPageView']);
+	  _paq.push(['enableLinkTracking']);
+	  (function() {
+		var u="https://analytics.yunclever.com/";
+		_paq.push(['setTrackerUrl', u+'piwik.php']);
+		_paq.push(['setSiteId', '12']);
+		_paq.push([ function() { visitor_id = this.getVisitorId(); }]);
+		var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+		g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+	  })();
+	</script>
 </head>
 <body <?php body_class(); ?>>
 
@@ -47,7 +63,7 @@
 					</a>
 				</div>
 				<div class="col-md-8">
-					<nav class="navbar navbar-default " role="navigation" style="width: 100%;">
+					<nav class="navbar navbar-default " role="navigation" style="width: 90%;">
 						<div class="navbar-header">
 							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
 							  <span class="sr-only"><?php _e('Toggle navigation','kadima');?></span>
