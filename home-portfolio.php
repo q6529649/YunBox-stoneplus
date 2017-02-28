@@ -9,7 +9,7 @@
 					<img class="img-responsive" src="<?php echo esc_attr($wl_theme_options['port_desc_img']); ?>">
 				</div>
 			</div>
-			<div class="col-md-4 specialty-grids ">
+			<div class="col-md-4 specialty-grids" style="padding-top:70px;">
 				<?php for($i=1 ; $i<=4; $i++) { ?>						
 					<div class="col-md-6 service-box wow fadeInRight animated animated" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInRight;">
 						<?php
