@@ -2,11 +2,9 @@
 	<div style="background-color: #333;">
 		<div class="col-md-12" style=";text-align: center;background-color: #d4d4d4;padding:0;">
 			<div style="background-color: #eeeeee;">
-				<div  style="border-top: 1px solid #aaaaaa;margin-bottom: 15px;background-color: #eeeeee;padding-top:10px;">
-					
-				</div>
+				
 			</div>
-			<div class="copyright-right col-md-12 " data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s;padding-bottom: 10px; ">
+			<div class="copyright-right col-md-12 " data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s;padding-bottom: 10px;padding-top:10px; ">
 				
 					<div class="col-md-2" style="text-align: right;">
 						<ul style=";padding: 0;">
