@@ -37,7 +37,7 @@
 <body <?php body_class(); ?>>
 
 <div>
-	<div style="background-image:url(../wp-content/themes/YunBox-stoneplus/images/top.jpg);background-position:center; background-repeat:repeat-y">
+	<div style="background-image:url(../wp-content/themes/kadima/images/top.jpg);background-position:center; background-repeat:repeat-y">
 		<div class="container">
 		<div class="header">
 			<div class="col-md-4">
