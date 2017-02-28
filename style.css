@@ -1,5 +1,5 @@
 /*******
-Theme Name: Kadima
+Theme Name: Kadima-stoneplus
 Theme URI:http://28story.com
 Author: JamesLiao
 Author URI: http://28story.com/
@@ -896,10 +896,11 @@ p, .textwidget {
     color: #555;
 }
 .kadima_blog_thumb_wrapper p {
-    font-size: 16px;
+    font-size: 1.5em !important;
     padding-right: 8px;
     margin-bottom: 20px;
     line-height: 27px;
+	margin: 2em 0 0 0 !important;
 }
 .kadima_blog_thumb_wrapper span a i {
     margin-right: 6px;
