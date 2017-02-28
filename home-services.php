@@ -10,7 +10,7 @@
 				<?php for($i=1; $i<5; $i++ ) { ?>
 				<div class="col-md-3 news-grid wow fadeInLeft animated animated" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;">
 					<img src="<?php echo esc_attr($wl_theme_options['service_img_'.$i]); ?>" alt="">
-					<div class="news-info">
+					<div class="news-info" style="text-align: center;">
 						<a href="<?php echo esc_url($wl_theme_options['service_link_'.$i]); ?>"><?php echo esc_attr($wl_theme_options['service_text_'.$i]); ?><p></p></a>
 					</div>
 				</div>

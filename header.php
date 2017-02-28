@@ -63,7 +63,7 @@
 					</a>
 				</div>
 				<div class="col-md-8">
-					<nav class="navbar navbar-default " role="navigation" style="width: 100%;">
+					<nav class="navbar navbar-default " role="navigation" style="width: 90%;">
 						<div class="navbar-header">
 							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
 							  <span class="sr-only"><?php _e('Toggle navigation','kadima');?></span>
