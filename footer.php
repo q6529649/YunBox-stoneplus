@@ -1,31 +1,34 @@
 <?php $wl_theme_options = kadima_get_options(); $piwik = get_option( 'yc_options_piwik' );?>
 	<div style="background-color: #333;">
-		<div class="col-md-12" style=";text-align: center;background-color: #d4d4d4;padding:0;">
+		<div class="col-md-12" style="background-color: #eeeeee;padding:0;">
 			<div style="background-color: #eeeeee;">
 				
 			</div>
 			<div class="copyright-right col-md-12 " data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s;padding-bottom: 10px;padding-top:10px; ">
 				<div class="container">
-					<div class="col-md-2">
-						<ul style=";padding: 0;">
-							<li style="display: inline-block;padding: 0.1em 0;"><i class="phone"></i></li>
-							<li style="display: inline-block;padding: 0.1em 0;"><p style="font-size: 13px;font-weight: bolder;" class="label1">0086-592-6218808</p></li>
-						</ul>
+					<div class="col-md-7">
+						<div class="col-md-12">
+							<ul>
+								<li style="display: inline-block;padding: 0.1em 0;"><i class="phone"></i></li>
+								<li style="display: inline-block;padding: 0.1em 0;"><p style="font-size: 14px;">0086-592-6218808</p></li>
+							</ul>
+						</div>
+						<div class="col-md-12">
+							<ul>
+								<li style="display: inline-block;padding: 0.1em 0;"><i class="message"></i></li>
+								<li style="display: inline-block;padding: 0.1em 0;"><p style="font-size: 14px;">info@stoneplus.cn</p></li>
+							</ul>
+						</div>
+						<div class="col-md-12">
+							<ul>
+								<li style="display: inline-block;padding: 0.1em 0;"><i class="indicate"></i></li>
+								<li style="display: inline-block;padding: 0.1em 0;"><p style="font-size: 14px;">No.3 Of Plant 6.Dongren Road,Xinglin,Jimei Dist.,Xiamen,Fujian,China(Mainland)</p></li>
+							</ul>
+						</div>														
 					</div>
-					<div class="col-md-2">
-						<ul style=";padding: 0;" style=";padding: 0;margin-top: 1.5em;">
-							<li style="display: inline-block;padding: 0.1em 0;"><i class="message"></i></li>
-							<li style="display: inline-block;padding: 0.1em 0;"><p style="font-size: 13px;font-weight: bolder;" class="label1">info@stoneplus.cn</p></li>
-						</ul>
-					</div>
-					<div class="col-md-6" style="padding-left:0;padding-right:0;">
-						<ul style=";padding: 0;" style=";padding: 0;margin-top: 1.5em;">
-							<li style="display: inline-block;padding: 0.1em 0;"><i class="indicate"></i></li>
-							<li style="display: inline-block;padding: 0.1em 0;"><p style="font-size: 13px;font-weight: bolder;" class="label1">No.3 Of Plant 6.Dongren Road,Xinglin,Jimei Dist.,Xiamen,Fujian,China(Mainland)</p></li>
-						</ul>
-					</div>
-					<div class="col-md-2" style="padding:0;">
-						<ul >
+					<div class="col-md-5">
+						<span>Follow US:</span>
+						<ul style="padding:6px;">
 							<?php if($wl_theme_options['fb_link']!='') { ?>
 								 <li class="twitter" title="Facebook"><a class="twitter" href="<?php echo esc_url($wl_theme_options['fb_link']); ?>"></a></li>
 							<?php } if($wl_theme_options['twitter_link']!='') { ?>
@@ -40,7 +43,7 @@
 								<li class="instagram" title="instagram"><a href="<?php echo esc_url($wl_theme_options['instagram']) ; ?>"></a></li>
 							<?php } ?>
 						</ul>
-					</div>
+					</div>					
 				</div>
 			</div>		
 		</div>

@@ -567,12 +567,6 @@ a.btn.btn-primary.btn-lg.see-button.hvr-shutter-out-horizontal {
     display: block;
 
 }
-.news-grid img:hover{
-    -webkit-animation: tada 1s .2s ease both;
-    -moz-animation: tada 1s .2s ease both;
-    -ms-animation: tada 1s .2s ease both;
-    -o-animation: tada 1s .2s ease both;
-}
 .color{
     background: #909090 !important;
 }
@@ -723,10 +717,9 @@ a.btn.btn-primary.btn-lg.see-button.hvr-shutter-out-horizontal {
 }
 .news-text h5 {
     color: #333;
-    font-size: 14px;
+    font-size: 16px;
     margin: 1em 0;
     line-height: 1.8em;
-    font-weight: bold;
 }
 .news-text h5 span{
     display:block;
