@@ -59,7 +59,6 @@
 <script>
 (function () {
 	var blnUid = false;
-
 	layui.use('layim', function(layim){
 		$ = layui.jquery;
 		var socketfront;
