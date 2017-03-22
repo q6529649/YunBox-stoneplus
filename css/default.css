@@ -1130,3 +1130,12 @@ i.message {
     margin-top: 15px;
     margin-bottom: 15px;
 }
+.summary h2{
+	font-size:30px;
+	font-weight:bold;
+}
+.products h2{
+	padding-left: 17px;
+	font-weight:bold;
+	font-size:20px;
+}
