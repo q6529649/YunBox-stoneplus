@@ -303,9 +303,6 @@
 .kadima_sidebar_widget_title {
     background: #f4a82f;
 }
-.kadima_sidebar_link p a:hover, .kadima_sidebar_widget ul li a:hover {
-    color: #ed1721;
-}
 .kadima_widget_tags a, .tagcloud a {
     background-size: 100% 200%;
     background-color: #edf0f2;
@@ -1132,4 +1129,13 @@ i.message {
 .input-group {
     margin-top: 15px;
     margin-bottom: 15px;
+}
+.summary h2{
+	font-size:30px;
+	font-weight:bold;
+}
+.products h2{
+	padding-left: 17px;
+	font-weight:bold;
+	font-size:20px;
 }

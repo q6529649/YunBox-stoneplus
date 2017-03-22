@@ -23,8 +23,8 @@
 		wp_enqueue_script('jquery.mixitup.min', get_template_directory_uri() .'/js/jquery.mixitup.min.js', array('jquery'));
 		wp_enqueue_script('responsiveslides.min', get_template_directory_uri() .'/js/responsiveslides.min.js', array('jquery'));
 		wp_enqueue_script('wow.min', get_template_directory_uri() .'/js/wow.min.js', array('jquery'));	
-		wp_enqueue_style( 'layim-style-g', '//api.yunclever.com/static/layui/css/layui.css' );
-		wp_enqueue_script('layim-g', '//api.yunclever.com/static/layui/layui.js', array('jquery'));
+		wp_enqueue_style( 'layim-style-g', '//statics.yunclever.com/layui/css/layui.css' );
+		wp_enqueue_script('layim-g', '//statics.yunclever.com/layui/layui.js', array('jquery'));
         if(is_front_page()){
             wp_enqueue_script('jquery.carouFredSel', '//cdn.bootcss.com/jquery.caroufredsel/6.2.1/jquery.carouFredSel.packed.js');
             wp_enqueue_script('photobox-js', '//cdn.bootcss.com/photobox/1.9.9/photobox/jquery.photobox.min.js');

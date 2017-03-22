@@ -33,44 +33,60 @@
 		}
 	?>
 	<?php wp_head(); ?>
+	<script type="text/javascript">
+	  var visitor_id;
+	  var _paq = _paq || [];
+	  _paq.push(["setCookieDomain", "stoneplus.site.yunclever.com"]);
+	  _paq.push(["setDomains", ["stoneplus.site.yunclever.com"]]);
+	  _paq.push(['trackPageView']);
+	  _paq.push(['enableLinkTracking']);
+	  (function() {
+		var u="https://analytics.yunclever.com/";
+		_paq.push(['setTrackerUrl', u+'piwik.php']);
+		_paq.push(['setSiteId', '12']);
+		_paq.push([ function() { visitor_id = this.getVisitorId(); }]);
+		var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+		g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+	  })();
+	</script>
 </head>
 <body <?php body_class(); ?>>
 
 <div>
-	<div style="background-image:url(../wp-content/themes/YunBox-stoneplus/images/top.jpg);background-position:center; background-repeat:repeat-y">
+	<div style="background-image:url(../wp-content/themes/kadima/images/top.jpg);background-position:center; background-repeat:repeat-y">
 		<div class="container">
-		<div class="header">
-			<div class="col-md-4">
-				<a href="<?php echo esc_url(home_url( '/' )); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-					<?php if($wl_theme_options['upload_image_logo']){ ?>
-						<img class="img-responsive" src="<?php echo $wl_theme_options['upload_image_logo']; ?>" style="margin-top: 2.5em; height:<?php if($wl_theme_options['height']!='') { echo $wl_theme_options['height']; }  else { "80"; } ?>px; width:<?php if($wl_theme_options['width']!='') { echo $wl_theme_options['width']; }  else { "200"; } ?>px;" />
-					<?php } ?>
-				</a>
-			</div>
-			<div class="col-md-8">
-				<nav class="navbar navbar-default " role="navigation" style="width: 100%;">
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
-						  <span class="sr-only"><?php _e('Toggle navigation','kadima');?></span>
-						  <span class="icon-bar"></span>
-						  <span class="icon-bar"></span>
-						  <span class="icon-bar"></span>
-						</button>
-					</div>
-					<div class="top-nav">
-						<?php
-							wp_nav_menu( array(
-								'theme_location' => 'second',
-								'menu_class' => 'nav1',
-								'walker' => new kadima_nav_new_walker(),
-								)
-							);
-						?>
-					</div>
-				</nav>
+			<div class="header">
+				<div class="col-md-4">
+					<a href="<?php echo esc_url(home_url( '/' )); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+						<?php if($wl_theme_options['upload_image_logo']){ ?>
+							<img class="img-responsive" src="<?php echo $wl_theme_options['upload_image_logo']; ?>" style="margin-top: 2.5em; height:<?php if($wl_theme_options['height']!='') { echo $wl_theme_options['height']; }  else { "80"; } ?>px; width:<?php if($wl_theme_options['width']!='') { echo $wl_theme_options['width']; }  else { "200"; } ?>px;" />
+						<?php } ?>
+					</a>
+				</div>
+				<div class="col-md-8">
+					<nav class="navbar navbar-default " role="navigation" style="width: 100%;">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+							  <span class="sr-only"><?php _e('Toggle navigation','kadima');?></span>
+							  <span class="icon-bar"></span>
+							  <span class="icon-bar"></span>
+							  <span class="icon-bar"></span>
+							</button>
+						</div>
+						<div class="top-nav">
+							<?php
+								wp_nav_menu( array(
+									'theme_location' => 'second',
+									'menu_class' => 'nav1',
+									'walker' => new kadima_nav_new_walker(),
+									)
+								);
+							?>
+						</div>
+					</nav>
+				</div>
 			</div>
 		</div>
-	</div>
 	</div>
 	<div class="row kadima_blog_wrapper">
 		<div class="col-md-12">
