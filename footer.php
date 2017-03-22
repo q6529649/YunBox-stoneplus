@@ -63,11 +63,11 @@
 		$ = layui.jquery;
 		var socketfront;
 		var ishttps = 'https:' == document.location.protocol ? true: false;
-		if(ishttps){
-			socketfront = new WebSocket('wss://api.yunclever.com/wss');
-		}else{
-			socketfront = new WebSocket('ws://api.yunclever.com:8282');
-		}
+		//if(ishttps){
+		//	socketfront = new WebSocket('wss://api.yunclever.com/wss');
+		//}else{
+			socketfront = new WebSocket('ws://im.hn1i2.yunclever.com:8282');
+		//}
 		var layim = layui.layim;
 		layim.config({
 			init: {
