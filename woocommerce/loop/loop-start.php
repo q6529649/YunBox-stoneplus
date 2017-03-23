@@ -16,4 +16,16 @@
  * @version     2.0.0
  */
 ?>
+<div class="row">
+<?php 
+	if (is_shop()){
+		get_sidebar( 'shop' ); ?>
+		<div class="col-md-9">
+<?php
+	}
+	else { ?>
+		<div class="col-md-12">
+<?php
+	}
+?>
 <ul class="products" style="margin-top:2em;">

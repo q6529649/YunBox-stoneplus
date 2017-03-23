@@ -55,7 +55,7 @@
 <div>
 	<div style="background-image:url(../wp-content/themes/kadima/images/top.jpg);background-position:center; background-repeat:repeat-y">
 		<div class="container">
-			<div class="header">
+			<div class="row">
 				<div class="col-md-4">
 					<a href="<?php echo esc_url(home_url( '/' )); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
 						<?php if($wl_theme_options['upload_image_logo']){ ?>

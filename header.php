@@ -20,7 +20,8 @@
 			echo '<meta http-equiv="x-dns-prefetch-control" content="on" />
 			<link rel="dns-prefetch" href="//cdn.yunclever.com">
 			<link rel="dns-prefetch" href="//cdn.bootcss.com">
-			<link rel="dns-prefetch" href="//static.addtoany.com">';
+			<link rel="dns-prefetch" href="//static.addtoany.com">
+			<link rel="dns-prefetch" href="//use.typekit.net">';
 		} elseif (isset($_COOKIE['yc_visit_cookie'])) {
 			echo '';
 		}
@@ -28,10 +29,11 @@
 			echo '<meta http-equiv="x-dns-prefetch-control" content="on" />
 			<link rel="dns-prefetch" href="//cdn.yunclever.com">
 			<link rel="dns-prefetch" href="//cdn.bootcss.com">
-			<link rel="dns-prefetch" href="//static.addtoany.com">';
+			<link rel="dns-prefetch" href="//static.addtoany.com">
+			<link rel="dns-prefetch" href="//use.typekit.net">';
 		}
 	?>
-	<?php wp_head(); ?>
+	<?php wp_head(); ?>	
 	<script type="text/javascript">
 	  var visitor_id;
 	  var _paq = _paq || [];
@@ -48,13 +50,15 @@
 		g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
 	  })();
 	</script>
+	<script src="https://use.typekit.net/pwg5bvb.js"></script>
+	<script>try{Typekit.load({ async: true });}catch(e){}</script>
 </head>
 <body <?php body_class(); ?>>
 
 <div>
 	<div class="flexslider">
 		<div class="container">
-			<div class="header">
+			<div class="row">
 				<div class="col-md-4">
 					<a href="<?php echo esc_url(home_url( '/' )); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
 						<?php if($wl_theme_options['upload_image_logo']){ ?>

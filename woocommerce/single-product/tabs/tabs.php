@@ -33,6 +33,7 @@ $tabs = apply_filters( 'woocommerce_product_tabs', array() );
 <?php
 if ( ! empty( $tabs ) ) : ?>
 
+	<?php get_sidebar( 'shop' ); ?>
 	<div class="col-md-9 woocommerce-tabs wc-tabs-wrapper" style="clear: none;">
 		<ul class="tabs wc-tabs">
 			<?php foreach ( $tabs as $key => $tab ) : ?>

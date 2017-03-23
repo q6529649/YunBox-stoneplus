@@ -37,8 +37,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 ?>
 
 <div itemscope itemtype="<?php echo woocommerce_get_product_schema(); ?>" id="product-<?php the_ID(); ?>" <?php post_class(); ?>>
-
 	<?php
+		woocommerce_template_single_title();
 		/**
 		 * woocommerce_before_single_product_summary hook.
 		 *
@@ -47,7 +47,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 		 */
 		do_action( 'woocommerce_before_single_product_summary' );
 	?>
-
 	<div class="summary entry-summary">
 
 		<?php
@@ -62,6 +61,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			 * @hooked woocommerce_template_single_meta - 40
 			 * @hooked woocommerce_template_single_sharing - 50
 			 */
+			remove_action('woocommerce_single_product_summary','woocommerce_template_single_title',5);
 			do_action( 'woocommerce_single_product_summary' );
 		?>
 

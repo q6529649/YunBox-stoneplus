@@ -47,7 +47,9 @@
 		var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
 		g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
 	  })();
-	</script>
+	</script>	
+	<script src="https://use.typekit.net/pwg5bvb.js"></script>
+	<script>try{Typekit.load({ async: true });}catch(e){}</script>
 </head>
 <body <?php body_class(); ?>>
 
@@ -89,8 +91,7 @@
 	</div>
 	<div class="container">
 		<div class="row kadima_blog_wrapper">
-			<?php get_sidebar( 'shop' ); ?>
-			<div class="col-md-9">
+			<div class="col-md-12">
 				<?php woocommerce_content(); ?>
 			</div>	
 		</div>

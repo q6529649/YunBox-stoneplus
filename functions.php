@@ -7,7 +7,8 @@
         wp_enqueue_style('bootstrap', '//statics.yunclever.com/bootstrap/3.3.7/css/bootstrap.min.css');
         wp_enqueue_style('animations', '//statics.yunclever.com/animate/3.5.1/animate.css');
         wp_enqueue_style('font-awesome', '//statics.yunclever.com/font-awesome/4.7.0/css/font-awesome.min.css');
-        wp_enqueue_style('video-js-css', '//statics.yunclever.com/videojs/5.17.0/video-js.min.css');
+        wp_enqueue_style('video-js-css', '//statics.yunclever.com/videojs/5.17.0/video-js.min.css');	
+		wp_enqueue_style('layim-style-g', '//statics.yunclever.com/layui/css/layui.css' );
         wp_enqueue_style('font-family', get_template_directory_uri() . '/css/font-family.css');
         wp_enqueue_style('default', get_template_directory_uri() . '/css/default.css');
         wp_enqueue_style('style', get_template_directory_uri() . '/style.css');
@@ -18,12 +19,10 @@
         wp_enqueue_script('kadima-theme-script', get_template_directory_uri() .'/js/kadima_theme_script.js', array('jquery'));
 		wp_enqueue_script('fliplightbox.min', get_template_directory_uri() .'/js/fliplightbox.min.js', array('jquery'));
 		wp_enqueue_script('jquery.easing.min', get_template_directory_uri() .'/js/jquery.easing.min.js', array('jquery'));
-		//wp_enqueue_script('jquery.fancybox-1.21', get_template_directory_uri() .'/js/jquery.fancybox-1.21.js', array('jquery'));
 		wp_enqueue_script('jquery.flexslider-min', get_template_directory_uri() .'/js/jquery.flexslider-min.js', array('jquery'));
 		wp_enqueue_script('jquery.mixitup.min', get_template_directory_uri() .'/js/jquery.mixitup.min.js', array('jquery'));
 		wp_enqueue_script('responsiveslides.min', get_template_directory_uri() .'/js/responsiveslides.min.js', array('jquery'));
-		wp_enqueue_script('wow.min', get_template_directory_uri() .'/js/wow.min.js', array('jquery'));	
-		wp_enqueue_style( 'layim-style-g', '//statics.yunclever.com/layui/css/layui.css' );
+		wp_enqueue_script('wow.min', get_template_directory_uri() .'/js/wow.min.js', array('jquery'));
 		wp_enqueue_script('layim-g', '//statics.yunclever.com/layui/layui.js', array('jquery'));
         if(is_front_page()){
             wp_enqueue_script('jquery.carouFredSel', '//cdn.bootcss.com/jquery.caroufredsel/6.2.1/jquery.carouFredSel.packed.js');
