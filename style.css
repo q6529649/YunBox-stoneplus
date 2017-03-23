@@ -2942,6 +2942,7 @@ i.message {
     text-align: center;
     font-size: 2em;
     padding-bottom: 1em;
+    padding-top: 1em;
 	font-family: eloquent-jf-small-caps-pro, serif;
 	font-style: normal;
 	font-weight: 400;
