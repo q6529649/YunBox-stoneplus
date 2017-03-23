@@ -8,16 +8,18 @@
 				<div class="container">
 					<div class="col-md-7">
 						<div class="col-md-12">
-							<ul>
-								<li style="display: inline-block;padding: 0.1em 0;"><i class="phone"></i></li>
-								<li style="display: inline-block;padding: 0.1em 0;"><p style="font-size: 14px;">0086-592-6218808</p></li>
-							</ul>
-						</div>
-						<div class="col-md-12">
-							<ul>
-								<li style="display: inline-block;padding: 0.1em 0;"><i class="message"></i></li>
-								<li style="display: inline-block;padding: 0.1em 0;"><p style="font-size: 14px;">info@stoneplus.cn</p></li>
-							</ul>
+							<div class="col-md-6" style="padding:0;">
+								<ul>
+									<li style="display: inline-block;padding: 0.1em 0;"><i class="phone"></i></li>
+									<li style="display: inline-block;padding: 0.1em 0;"><p style="font-size: 14px;">0086-592-6218808</p></li>
+								</ul>
+							</div>
+							<div class="col-md-6" style="padding:0;>
+								<ul>
+									<li style="display: inline-block;padding: 0.1em 0;"><i class="message"></i></li>
+									<li style="display: inline-block;padding: 0.1em 0;"><p style="font-size: 14px;">info@stoneplus.cn</p></li>
+								</ul>
+							</div>
 						</div>
 						<div class="col-md-12">
 							<ul>
@@ -27,7 +29,7 @@
 						</div>														
 					</div>
 					<div class="col-md-5">
-						<span>Follow US:</span>
+						<span>Follow Us:</span>
 						<ul style="padding:6px;">
 							<?php if($wl_theme_options['fb_link']!='') { ?>
 								 <li class="twitter" title="Facebook"><a class="twitter" href="<?php echo esc_url($wl_theme_options['fb_link']); ?>"></a></li>
