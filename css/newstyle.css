@@ -241,6 +241,7 @@ body a {
 }
 .jumbotron.banner-bottom-left {
     background: none;
+	line-height: 1.4em;
 }
 /*------------------ Slider Part starts Here----------*/
 #slider2,

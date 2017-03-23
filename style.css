@@ -831,7 +831,8 @@ p, .textwidget {
 }
 .kadima_blog_wrapper {
     margin-bottom: 0px;
-	margin-top:0px;
+	margin-top:0px;	
+    padding-bottom: 2em;
 }
 .kadima_blog_thumb_wrapper {
     margin-bottom: 40px;
@@ -2967,4 +2968,7 @@ blockquote p {
 }
 .woocommerce div.product div.images .thumbnails img {
     border: 2px dotted #333;
+}
+.woocommerce nav.woocommerce-pagination ul {
+	border: 0;
 }

@@ -17,9 +17,9 @@
  */
 ?>
 <div class="row">
-<?php 
-	if (is_shop()){
-		get_sidebar( 'shop' ); ?>
+<?php
+	if (is_shop() || is_archive()){
+		get_sidebar(); ?>
 		<div class="col-md-9">
 <?php
 	}

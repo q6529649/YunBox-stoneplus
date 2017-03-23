@@ -732,4 +732,10 @@
       	  		return 3;
     		}
 	}
+	add_filter( 'woocommerce_page_title', 'customWooc_shop_page_title');
+	function customWooc_shop_page_title( $page_title ) {
+		if( 'Shop' == $page_title) {
+		return '';
+    }
+}
 ?>
