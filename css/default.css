@@ -276,17 +276,8 @@
 /********* Blog Full width css ********/
 
 .kadima_post_date {
-    background: #31A3DD;
+	background: #ffb01f;
     color: #ffffff;
-}
-.kadima_blog_comment:hover i, .kadima_blog_comment:hover h6 {
-    color: #31A3DD;
-}
-.kadima_fuul_blog_detail_padding h2 a, .kadima_fuul_blog_detail_padding h2 {
-    color: #31A3DD;
-}
-.kadima_fuul_blog_detail_padding h2 a:hover {
-    color: #31A3DD;
 }
 
 /*** blog sidebar css **/
@@ -474,15 +465,7 @@
     background-color: #31A3DD;
     color: #FFFFFF;
 }
-
-/*** breadcum style css **/
-
-.breadcrumb li a {
-    color: #31A3DD !important;
-}
-
 /** progress bar or nav button css */
-
 .progress-bar {
     background-color: #31A3DD !important;
 }
@@ -864,7 +847,7 @@ i.message {
 **************************************************************************************************************************/
 
 .kadima_header_breadcrum_title {
-    margin-bottom: 70px;
+    margin-bottom: 0px;
     background: #edf0f2;
     opacity: 1;
     padding-top: 8px;
@@ -883,12 +866,11 @@ i.message {
     -moz-border-radius: 0;
     border-radius: 0;
     list-style: none;
+	margin-bottom: 10px;
+    margin-top: 10px;
 }
 .breadcrumb li {
     display: inline-block;
-}
-.breadcrumb li a {
-    color: #31A3DD;
 }
 .breadcrumb> .active {
     color: #000;

@@ -1,65 +1,14 @@
-<?php //Template Name:Full-Width-About Page?>
-<!DOCTYPE html>
-<!--[if lt IE 7]>
-    <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-    <!--[if IE 7]>
-    <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-    <!--[if IE 8]>
-    <html class="no-js lt-ie9"> <![endif]-->
-    <!--[if gt IE 8]><!-->
-<html <?php language_attributes(); ?>><!--<![endif]-->
-<head>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="<?php bloginfo('charset'); ?>" />
-	<?php $wl_theme_options = kadima_get_options(); ?>
-	<?php if($wl_theme_options['upload_image_favicon']!=''){ ?>
-	<link rel="shortcut icon" href="<?php  echo esc_url($wl_theme_options['upload_image_favicon']); ?>" />
-	<?php } ?>
-	<?php
-		if (is_home()) {
-			echo '<meta http-equiv="x-dns-prefetch-control" content="on" />
-			<link rel="dns-prefetch" href="//cdn.yunclever.com">
-			<link rel="dns-prefetch" href="//cdn.bootcss.com">
-			<link rel="dns-prefetch" href="//static.addtoany.com">';
-		} elseif (isset($_COOKIE['yc_visit_cookie'])) {
-			echo '';
-		}
-		else {
-			echo '<meta http-equiv="x-dns-prefetch-control" content="on" />
-			<link rel="dns-prefetch" href="//cdn.yunclever.com">
-			<link rel="dns-prefetch" href="//cdn.bootcss.com">
-			<link rel="dns-prefetch" href="//static.addtoany.com">';
-		}
-	?>
-	<?php wp_head(); ?>
-	<script type="text/javascript">
-	  var visitor_id;
-	  var _paq = _paq || [];
-	  _paq.push(["setCookieDomain", "stoneplus.site.yunclever.com"]);
-	  _paq.push(["setDomains", ["stoneplus.site.yunclever.com"]]);
-	  _paq.push(['trackPageView']);
-	  _paq.push(['enableLinkTracking']);
-	  (function() {
-		var u="https://analytics.yunclever.com/";
-		_paq.push(['setTrackerUrl', u+'piwik.php']);
-		_paq.push(['setSiteId', '12']);
-		_paq.push([ function() { visitor_id = this.getVisitorId(); }]);
-		var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-		g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-	  })();
-	</script>
-</head>
-<body <?php body_class(); ?>>
-
-<div>
-	<div style="background-image:url(../wp-content/themes/kadima/images/top.jpg);background-position:center; background-repeat:repeat-y">
+<?php //Template Name:Full-Width-About Page
+get_header();
+$theme_options = kadima_get_options();
+?>
+	<div style="background-image:url(//stoneplus.site.yunclever.com/wp-content/themes/kadima/images/top.jpg);background-position:center; background-repeat:repeat-y">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-4">
 					<a href="<?php echo esc_url(home_url( '/' )); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-						<?php if($wl_theme_options['upload_image_logo']){ ?>
-							<img class="img-responsive" src="<?php echo $wl_theme_options['upload_image_logo']; ?>" style="margin-top: 2.5em; height:<?php if($wl_theme_options['height']!='') { echo $wl_theme_options['height']; }  else { "80"; } ?>px; width:<?php if($wl_theme_options['width']!='') { echo $wl_theme_options['width']; }  else { "200"; } ?>px;" />
+						<?php if($theme_options['upload_image_logo']){ ?>
+							<img class="img-responsive" src="<?php echo $theme_options['upload_image_logo']; ?>" style="margin-top: 2.5em; height:<?php if($theme_options['height']!='') { echo $theme_options['height']; }  else { "80"; } ?>px; width:<?php if($theme_options['width']!='') { echo $theme_options['width']; }  else { "200"; } ?>px;" />
 						<?php } ?>
 					</a>
 				</div>

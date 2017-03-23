@@ -5,6 +5,7 @@ $wl_theme_options['_frontpage'];
 if ($wl_theme_options['_frontpage']=="1" && is_front_page())
 {
 	//get_template_part('home','slideshow');
+	get_template_part('home','index');
 	if($wl_theme_options['service_home'] == "1") {
 		get_template_part('home','services');
 	}

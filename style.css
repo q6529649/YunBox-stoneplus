@@ -831,7 +831,7 @@ p, .textwidget {
 }
 .kadima_blog_wrapper {
     margin-bottom: 0px;
-	margin-top:50px;
+	margin-top:0px;
 }
 .kadima_blog_thumb_wrapper {
     margin-bottom: 40px;
@@ -1131,7 +1131,11 @@ p, .textwidget {
     width: 100%;
 }
 .kadima_fuul_blog_detail_padding h2 {
-    margin-top: 0px;
+    margin-top: 0px;	
+	font-family: eloquent-jf-small-caps-pro, serif;
+	font-style:none;
+	font-size:2em;
+	margin-bottom:1em;
 }
 .kadima_fuul_blog_detail_padding h2 a {
     font-size: 28px;
