@@ -1,10 +1,12 @@
-<?php $wl_theme_options = kadima_get_options(); $piwik = get_option( 'yc_options_piwik' );?>
+<?php
+$theme_options = kadima_get_options();
+$piwik = get_option( 'yc_options_piwik' );
+?>
 	<div style="background-color: #333;">
 		<div class="col-md-12" style="background-color: #eeeeee;padding:0;">
-			<div style="background-color: #eeeeee;">
-				
+			<div style="background-color: #eeeeee;">				
 			</div>
-			<div class="copyright-right col-md-12 " data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s;padding-bottom: 10px;padding-top:10px; ">
+			<div class="copyright-right col-md-12 " data-wow-delay="0.4s" style="padding-bottom: 20px;padding-top:20px; ">
 				<div class="container">
 					<div class="col-md-7">
 						<div class="col-md-12">
@@ -31,18 +33,18 @@
 					<div class="col-md-5">
 						<span>Follow Us:</span>
 						<ul style="padding:6px;">
-							<?php if($wl_theme_options['fb_link']!='') { ?>
-								 <li class="twitter" title="Facebook"><a class="twitter" href="<?php echo esc_url($wl_theme_options['fb_link']); ?>"></a></li>
-							<?php } if($wl_theme_options['twitter_link']!='') { ?>
-								<li class="twitter facebook" title="Twitter"><a class="twitter facebook" href="<?php echo esc_url($wl_theme_options['twitter_link']) ; ?>"></a></li>
-							<?php } if($wl_theme_options['linkedin_link']!='') { ?>
-								<li class="twitter chrome" title="Linkedin"><a class="twitter chrome" href="<?php echo esc_url($wl_theme_options['linkedin_link']) ; ?>"></a></li>
-							<?php } if($wl_theme_options['youtube_link']!='') { ?>
-								<li class="twitter pinterest" title="Youtube"><a class="twitter pinterest" href="<?php echo esc_url($wl_theme_options['youtube_link']) ; ?>"></a></li>
-							<?php } if($wl_theme_options['gplus']!='') { ?>
-								<li class="twitter linkedin" title="gplus"><a class="twitter linkedin" href="<?php echo esc_url($wl_theme_options['gplus']) ; ?>"></a></li>
-							<?php } if($wl_theme_options['instagram']!='') { ?>
-								<li class="instagram" title="instagram"><a href="<?php echo esc_url($wl_theme_options['instagram']) ; ?>"></a></li>
+							<?php if($theme_options['fb_link']!='') { ?>
+								 <li class="twitter" title="Facebook"><a class="twitter" href="<?php echo esc_url($theme_options['fb_link']); ?>"></a></li>
+							<?php } if($theme_options['twitter_link']!='') { ?>
+								<li class="twitter facebook" title="Twitter"><a class="twitter facebook" href="<?php echo esc_url($theme_options['twitter_link']) ; ?>"></a></li>
+							<?php } if($theme_options['linkedin_link']!='') { ?>
+								<li class="twitter chrome" title="Linkedin"><a class="twitter chrome" href="<?php echo esc_url($theme_options['linkedin_link']) ; ?>"></a></li>
+							<?php } if($theme_options['youtube_link']!='') { ?>
+								<li class="twitter pinterest" title="Youtube"><a class="twitter pinterest" href="<?php echo esc_url($theme_options['youtube_link']) ; ?>"></a></li>
+							<?php } if($theme_options['gplus']!='') { ?>
+								<li class="twitter linkedin" title="gplus"><a class="twitter linkedin" href="<?php echo esc_url($theme_options['gplus']) ; ?>"></a></li>
+							<?php } if($theme_options['instagram']!='') { ?>
+								<li class="instagram" title="instagram"><a href="<?php echo esc_url($theme_options['instagram']) ; ?>"></a></li>
 							<?php } ?>
 						</ul>
 					</div>					
@@ -54,9 +56,9 @@
 <a href="#" title="Go Top" class="kadima_scrollup" style="display: inline;">
     <i class="fa fa-chevron-up"></i>
 </a>
-<?php if($wl_theme_options['custom_css']) ?>
+<?php if($theme_options['custom_css']) ?>
 <style type="text/css">
-<?php { echo esc_attr($wl_theme_options['custom_css']); } ?>
+<?php { echo esc_attr($theme_options['custom_css']); } ?>
 </style>
 <script>
 (function () {

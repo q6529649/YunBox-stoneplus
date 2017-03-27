@@ -285,15 +285,6 @@
 .kadima_recent_widget_post h3 a {
     color: #31A3DD;
 }
-.kadima_sidebar_widget {
-    border-left: 3px solid #f4a82f;
-    border-right: 3px solid #f4a82f;
-    border-bottom: 3px solid #f4a82f;
-    background-color: #ffffff;
-}
-.kadima_sidebar_widget_title {
-    background: #f4a82f;
-}
 .kadima_widget_tags a, .tagcloud a {
     background-size: 100% 200%;
     background-color: #edf0f2;

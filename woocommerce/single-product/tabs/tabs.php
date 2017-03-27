@@ -29,15 +29,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 $tabs = apply_filters( 'woocommerce_product_tabs', array() );
 ?>
 <div class="row" style="clear: both;">
-	<?php get_sidebar(); ?>
+	<?php //get_sidebar(); ?>
 <?php
 if ( ! empty( $tabs ) ) : ?>
-
-	<?php get_sidebar( 'shop' ); ?>
-	<div class="col-md-9 woocommerce-tabs wc-tabs-wrapper" style="clear: none;">
+	<div class="col-md-12 woocommerce-tabs wc-tabs-wrapper" style="clear: none;">
 		<ul class="tabs wc-tabs">
 			<?php foreach ( $tabs as $key => $tab ) : ?>
-				<li class="<?php echo esc_attr( $key ); ?>_tab">
+				<li class="<?php echo esc_attr( $key ); ?>_tab red-line">
 					<a href="#tab-<?php echo esc_attr( $key ); ?>"><?php echo apply_filters( 'woocommerce_product_' . $key . '_tab_title', esc_html( $tab['title'] ), $key ); ?></a>
 				</li>
 			<?php endforeach; ?>

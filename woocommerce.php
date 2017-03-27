@@ -1,4 +1,6 @@
-<?php get_header(); $theme_options = kadima_get_options();?>
+<?php
+$theme_options = kadima_get_options();
+get_header(); ?>
 	<div style="background-image:url(//stoneplus.site.yunclever.com/wp-content/themes/kadima/images/top.jpg);background-position:center; background-repeat:repeat-y;">
 		<div class="container">
 			<div class="header">
@@ -34,11 +36,44 @@
 			</div>
 		</div>
 	</div>
-	<div class="container">
-		<div class="row kadima_blog_wrapper">
-			<div class="col-md-12">
-				<?php woocommerce_content(); ?>
-			</div>	
+	<div>	
+	<?php if(is_single()){ ?>
+		<?php get_template_part('breadcrums');  ?>
+		<?php woocommerce_content(); ?>
+	<?php
+	} else if (is_shop() || is_archive()) { ?>	
+		<section>
+			<div class="primary-background">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<h5>WORK SMART, NOT HARD</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+			<?php get_template_part('breadcrums');  ?>
+		</section>
+		<div class="row" style="margin-top: 60px;margin-bottom: 20px;">
+			<div class="container">
+				<div class="col-md-12 text-center">
+					<h5 class="red-line-45" style="font-size: 2em;font-weight: 400;padding: 10px;">These machines can be categorized into five main segments:</h5>
+				</div>
+			</div>
 		</div>
-	</div>	
+		<div class="row" style="border-bottom: 4px solid #f4a82f;">
+			<?php get_sidebar(); ?>
+		</div>
+		<div style="background-color:#e3e0e4;">
+			<div class="container" style="padding-top:2em;">
+				<div class="row kadima_blog_wrapper">
+					<div class="col-md-12">
+						<?php woocommerce_content(); ?>
+					</div>	
+				</div>
+			</div>
+		</div>
+	<?php	
+	} ?>
+	</div>
 <?php get_footer(); ?>
