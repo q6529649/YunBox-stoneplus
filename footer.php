@@ -6,7 +6,7 @@ $piwik = get_option( 'yc_options_piwik' );
 		<div class="col-md-12" style="background-color: #eeeeee;padding:0;">
 			<div style="background-color: #eeeeee;">				
 			</div>
-			<div class="copyright-right col-md-12 " data-wow-delay="0.4s" style="padding-bottom: 20px;padding-top:20px; ">
+			<div class="copyright-right col-md-12 " data-wow-delay="0.4s" style="padding-bottom: 40px;padding-top:40px;color:#fff; ">
 				<div class="container">
 					<div class="col-md-7">
 						<div class="col-md-12">
