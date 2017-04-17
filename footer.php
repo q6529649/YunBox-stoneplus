@@ -80,7 +80,7 @@ $piwik = get_option( 'yc_options_piwik' );
 				  ,"id": visitor_id
 				  ,"status": "online"
 				  ,"sign": ""
-				  ,"avatar": "//api.yunclever.com/static/layui/images/Chat.png"
+				  ,"avatar": "//stoneplus.site.yunclever.com/wp-content/themes/kadima/images/ol-logo.png"
 				}
 			}
 			,minRight: "0px"
@@ -91,7 +91,7 @@ $piwik = get_option( 'yc_options_piwik' );
 		layim.chat({
 			name: 'Online Chat'
 			,type: 'kefu'
-			,avatar: '//api.yunclever.com/static/layui/images/Chat.png'
+			,avatar: '//stoneplus.site.yunclever.com/wp-content/themes/kadima/images/ol-logo.png'
 			,id: 10000
 		});
 		layim.setChatMin();
