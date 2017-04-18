@@ -9,7 +9,7 @@
 					<img class="img-responsive" src="<?php echo esc_attr($wl_theme_options['port_desc_img']); ?>">
 				</div>
 			</div>-->
-			<div class="col-md-12 specialty-grids">
+			<div class="col-md-12 specialty-grids" style="    padding-right: 30px;padding-left: 30px;">
 				<?php for($i=1 ; $i<=4; $i++) { ?>						
 					<div class="col-md-3 service-box wow fadeInRight animated animated" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInRight;">
 						<?php
@@ -30,7 +30,8 @@
 								<img src="../wps/wp-content/themes/YunBox-stoneplus/images/jt.jpg" alt="">
 							
 							
-							<h5 style="text-align: left;line-height: 50px;"><?php echo esc_attr($wl_theme_options['port_title_'.$i]); ?></h5>
+							<h5 style="text-align: left;line-height: 38px;margin-bottom: 0;font-weight: 600;"><?php echo esc_attr($wl_theme_options['port_title_'.$i]); ?></h5>
+							<h5 style="text-align: left;line-height: 32px;margin:0;"><?php echo esc_attr($wl_theme_options['port_description_'.$i]); ?></h5>
 						</figure>
 					</div>
 				<?php } ?>
