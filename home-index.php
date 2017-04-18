@@ -3,10 +3,10 @@
 	<div class="col-md-12" style="border-bottom: 1px solid #fff;position: absolute;z-index: 2;">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-3" style="background-color: rgba(252, 211, 135, 0.64);width: 20% !important;">
+				<div class="col-md-3" style="background-color: rgba(244, 168, 47, 0.45);width: 20% !important;">
 					<a href="<?php echo esc_url(home_url( '/' )); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
 						<?php if($theme_options['upload_image_logo']){ ?>
-							<img class="img-responsive" src="<?php echo $theme_options['upload_image_logo']; ?>" style="margin-top: 1.4em;margin-bottom: 1.4em;  height:<?php if($theme_options['height']!='') { echo $theme_options['height']; }  else { "80"; } ?>px; width:<?php if($theme_options['width']!='') { echo $theme_options['width']; }  else { "200"; } ?>px;" />
+							<img class="img-responsive" src="<?php echo $theme_options['upload_image_logo']; ?>" style="margin-top: 1.3em;margin-bottom: 1.2em;  height:<?php if($theme_options['height']!='') { echo $theme_options['height']; }  else { "80"; } ?>px; width:<?php if($theme_options['width']!='') { echo $theme_options['width']; }  else { "200"; } ?>px;" />
 						<?php } ?>
 					</a>
 				</div>
