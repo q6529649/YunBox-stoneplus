@@ -1,5 +1,5 @@
 <?php $theme_options = kadima_get_options(); ?>
-<div class="kadima_service" style="background: url(../wps/wp-content/themes/YunBox-stoneplus/images/bj1.png) center top no-repeat;">
+<div class="kadima_service" style="background: url(./wp-content/themes/kadima/images/bj1.png) center top no-repeat;">
 	<div class="news container">
 		<div class="col-md-12" style="margin-top:-225px;z-index: 2;">
 			<div class="news-text">
