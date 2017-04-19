@@ -705,9 +705,12 @@ a.btn.btn-primary.btn-lg.see-button.hvr-shutter-out-horizontal {
     text-decoration:none;
 }
 .news-grid span {
-    color: #bb1e10;
-    font-size: 14px;
+    color: #f8a933;
+    font-size: 35px;
     line-height: 1.7em;
+	padding-left: 20px;
+    padding-right: 20px;
+    border-bottom: 3px solid #f8a933;
 }
 .news-info p {
     color: #333333;
@@ -1555,6 +1558,9 @@ span.menu {
 }
 .to:hover{
 	bottom: 7px !important;
+}
+.nav>li>a:focus, .nav>li>a:hover{
+	background-color: transparent;
 }
 /*main_btm1 end*/
 .news-grids .news-info a:visited{color:#000}
