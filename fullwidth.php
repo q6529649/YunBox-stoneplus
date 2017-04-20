@@ -45,3 +45,11 @@ $theme_options = kadima_get_options();
 		</div>		
 	</div>
 <?php get_footer(); ?>
+<script>
+	console.log('jquery start.');
+	jQuery(document).ready(function($){
+		var width = $(window).width();
+		console.log(width);
+		jQuery(".dropdown-menu").css("width",width+"px");
+	})
+</script>

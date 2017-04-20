@@ -1,7 +1,7 @@
 <?php
 $theme_options = kadima_get_options();
 get_header(); ?>
-	<div style="background-image:url(../wps/wp-content/themes/YunBox-stoneplus/images/top.jpg);background-position:center; background-repeat:repeat-y">
+	<div style="background-color:#f4a830;">
 		<div class="container">
 			<div class="header">
 				<div class="col-md-3" style="background-color: rgba(244, 168, 47, 0.45);width: 20% !important;">
@@ -12,7 +12,7 @@ get_header(); ?>
 					</a>
 				</div>
 				<div class="col-md-9">
-					<nav class="navbar navbar-default " role="navigation" style="width: 90%;">
+					<nav class="navbar navbar-default newnav " role="navigation" style="width: 90%;">
 						<div class="navbar-header">
 							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
 							  <span class="sr-only"><?php _e('Toggle navigation','kadima');?></span>
@@ -48,27 +48,28 @@ get_header(); ?>
 				<div class="container">
 					<div class="row">
 						<div class="col-sm-12">
-							<h5>WORK SMART, NOT HARD</h5>
+							<h5></h5>
 						</div>
 					</div>
 				</div>
 			</div>
-			<?php get_template_part('breadcrums');  ?>
+			
 		</section>
-		<div class="row" style="margin-top: 60px;margin-bottom: 20px;">
-			<div class="container">
-				<div class="col-md-12 text-center">
-					<h5 class="red-line-45" style="font-size: 2em;font-weight: 400;padding: 10px;">These machines can be categorized into five main segments:</h5>
-				</div>
-			</div>
-		</div>
-		<div class="row" style="border-bottom: 4px solid #f4a82f;">
-			<?php get_sidebar(); ?>
-		</div>
-		<div style="background-color:#e3e0e4;">
+		
+		
+<script>
+	console.log('jquery start.');
+	jQuery(document).ready(function($){
+		var width = $(window).width();
+		console.log(width);
+		jQuery(".dropdown-menu").css("width",width+"px");
+	})
+</script>
+		<div style=" background: url(../wps/wp-content/themes/YunBox-stoneplus/images/bjcl2.png) center top no-repeat;">
 			<div class="container" style="padding-top:2em;">
+			<?php get_template_part('breadcrums');  ?>
 				<div class="row kadima_blog_wrapper">
-					<div class="col-md-12">
+					<div class="col-md-12" style="padding:0;">
 						<?php woocommerce_content(); ?>
 					</div>	
 				</div>
