@@ -2,7 +2,15 @@
 class kadima_nav_walker extends Walker_Nav_Menu {
 	function start_lvl( &$output, $depth = 0, $args = array() ) {
 		$indent = str_repeat("\t", $depth);
-		$output .= "\n$indent<ul class=\"dropdown-menu\">\n";
+		$output .= "\n$indent<div class=\"dropdown-menu\">\n";
+		$output .= "\n$indent<div class=\"container\">\n";
+		$output .= "\n$indent<ul class=\"dropdown-menu2\">\n";
+	}
+	function end_lvl( &$output, $depth = 0, $args = array() ) {
+		$indent = str_repeat("\t", $depth);
+		$output .= "$indent</ul>";
+		$output .= "$indent</div>";
+		$output .= "$indent</div>";
 	}
 	function start_el( &$output, $item, $depth = 0, $args = array(), $id = 0 ) {
 		$indent = ( $depth ) ? str_repeat( "\t", $depth ) : '';
@@ -33,7 +41,7 @@ class kadima_nav_walker extends Walker_Nav_Menu {
 		$item_output = $args->before;
 		$item_output .= '<a'. $attributes .'>';
 		$item_output .= $args->link_before . apply_filters( 'the_title', $item->title, $item->ID ) . $args->link_after;
-		$item_output .= ($args->has_children) ? '<i class="fa fa-angle-down"></i></a>' : '</a>';
+		$item_output .= ($args->has_children) ? '<i class=""></i></a>' : '</a>';
 		$item_output .= $args->after;
 
 		$output .= apply_filters( 'walker_nav_menu_start_el', $item_output, $item, $depth, $args );

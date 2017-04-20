@@ -647,9 +647,10 @@ i.message {
 }
 .dropdown-menu {
     position: absolute;
+	height:229px;
     top: 100%;
     right: auto;
-    left: 0;
+    left: -92.3%;
     z-index: 1000;
     display: none;
     float: left;
@@ -664,8 +665,10 @@ i.message {
     border-radius: 0px;
     -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
     box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
-    text-transform: uppercase;
-    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
+	background-color: transparent;	
+    -webkit-box-shadow: 0 3px 4px rgba(0,0,0,0.18);
+    box-shadow: 0 -2px 4px rgba(0,0,0,0.0);
+
 }
 .dropdown-menu> li> a {
     display: block;

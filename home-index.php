@@ -47,3 +47,11 @@
 		<?php } ?>
 	</ul>
 </div>
+<script>
+	console.log('jquery start.');
+	jQuery(document).ready(function($){
+		var width = $(window).width();
+		console.log(width);
+		jQuery(".dropdown-menu").css("width",width+"px");
+	})
+</script>
