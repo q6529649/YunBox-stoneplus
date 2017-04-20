@@ -58,14 +58,12 @@ get_header(); ?>
 		
 		
 <script>
-	console.log('jquery start.');
 	jQuery(document).ready(function($){
 		var width = $(window).width();
-		console.log(width);
 		jQuery(".dropdown-menu").css("width",width+"px");
 	})
 </script>
-		<div style=" background: url(../wps/wp-content/themes/YunBox-stoneplus/images/bjcl2.png) center top no-repeat;">
+		<div style=" background: url(./wp-content/themes/kadima/images/bjcl2.png) center top no-repeat;">
 			<div class="container" style="padding-top:2em;">
 			<?php get_template_part('breadcrums');  ?>
 				<div class="row kadima_blog_wrapper">
