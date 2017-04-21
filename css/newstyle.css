@@ -51,7 +51,7 @@ body{
 	position: static;
 	padding-top:2.2em;
 	padding-left:1em;
-	padding-bottom:0em;
+	padding-bottom:1em;
 	padding-right:1em;
 }
 .top-nav ul  li.active{
@@ -666,7 +666,7 @@ a.btn.btn-primary.btn-lg.see-button.hvr-shutter-out-horizontal {
 }
 /*-- news --*/
 .news {
-    padding: 4em 0;
+    padding: 3.5em 0;
 }
 .news-text h3 {
     color: #f4a82f;
@@ -857,7 +857,7 @@ a.btn.btn-primary.btn-lg.see-button.hvr-shutter-out-horizontal {
 }
 .copyright-right ul li{
     display:inline-block;
-	padding-right: 5px;
+	padding-right: 15px;
 }
 .copyright-right ul li a.twitter{
     background: url(../images/facebook.png) no-repeat 0px 0px;
