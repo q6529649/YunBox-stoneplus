@@ -857,7 +857,7 @@ a.btn.btn-primary.btn-lg.see-button.hvr-shutter-out-horizontal {
 }
 .copyright-right ul li{
     display:inline-block;
-	padding-right: 5px;
+	padding-right: 15px;
 }
 .copyright-right ul li a.twitter{
     background: url(../images/facebook.png) no-repeat 0px 0px;
