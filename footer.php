@@ -10,27 +10,26 @@ $piwik = get_option( 'yc_options_piwik' );
 				<div class="container">
 					<div class="col-md-7">
 						<div class="col-md-12">
-							<div class="col-md-5">
+							<div class="col-md-6">
 								<ul>
-									<p style="font-size: 22px;border-bottom: 2px solid #fff;font-weight: 600;margin-bottom:14px;">Telephone</p>
-									<li style="display: inline-block;padding: 0.1em 0;"><p style="font-size: 14px;">Tel:086-592-6218808</p></li>
-									<li style="display: inline-block;padding: 0.1em 0;"><p style="font-size: 14px;">Fax:086-592-6218809</p></li>
-									<li style="display: inline-block;padding: 0.1em 0;"><p style="font-size: 14px;">Email:info@stoneplus.cn</p></li>
+									<p style="font-size: 22px;border-bottom: 2px solid #fff;font-weight: 600;margin-bottom:14px;width: 60%;">Contact Us</p>
+									<li style="display: inline-block;padding: 0.1em 0;"><p style="font-size: 14px;">Tel:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;086-592-6218808</p></li>
+									<li style="display: inline-block;padding: 0.1em 0;"><p style="font-size: 14px;">Fax:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;086-592-6218809</p></li>
+									<li style="display: inline-block;padding: 0.1em 0;"><p style="font-size: 14px;">E-mail:&nbsp;info@stoneplus.cn</p></li>
 								</ul>
 							</div>
-							<div class="col-md-7">
+							<div class="col-md-6">
 								<ul>
-								<p style="font-size: 22px;border-bottom: 2px solid #fff;font-weight: 600;margin-bottom:14px;">address</p>
-								<li style="display: inline-block;padding: 0.1em 0;"><p style="font-size: 14px;">No.3 Of Plant 6.Dongren Road,Xinglin,Jimei Dist.,Xiamen,Fujian,China(Mainland)</p></li>
-							
-							</ul>
-							</div>
-							
+									<p style="font-size: 22px;border-bottom: 2px solid #fff;font-weight: 600;margin-bottom:14px;width: 85%;">Address</p>
+									<li style="display: inline-block;padding: 0.1em 0;"><p style="font-size: 14px;">No.3 Of Plant 6.Dongren Road, Xinglin, <br/>Jimei Dist., Xiamen, Fujian, <br/>China(Mainland)</p></li>
+								</ul>
+							</div>							
 						</div>													
 					</div>
 					<div class="col-md-5">
-						<span style="padding-left: 10px;">&copy;2017 STONEPLUS MACHINERY CO., LTD. All Rights Reserved.</span>	
-							<ul style="padding:6px;margin-top:22px;" style="margin-top: 22px;">
+						<div style="padding-top:4em;">
+							<span style="padding-left: 10px;">&copy; 2017 STONEPLUS MACHINERY CO., LTD. All Rights Reserved.</span>	
+							<ul class="text-right" style="padding:6px;margin-top:22px;margin-top: 22px;">
 								<?php if($theme_options['fb_link']!='') { ?>
 									 <li class="twitter" title="Facebook"><a class="twitter" href="<?php echo esc_url($theme_options['fb_link']); ?>"></a></li>
 								<?php } if($theme_options['twitter_link']!='') { ?>
@@ -45,6 +44,7 @@ $piwik = get_option( 'yc_options_piwik' );
 									<li class="instagram" title="instagram"><a href="<?php echo esc_url($theme_options['instagram']) ; ?>"></a></li>
 								<?php } ?>
 							</ul>
+						</div>
 					</div>				
 				</div>
 			</div>		
