@@ -2975,7 +2975,7 @@ blockquote p {
 }
 
 .primary-background {
-    background: url(../YunBox-stoneplus/images/bjcl.png) 50% 50% no-repeat;
+    background: url(./images/bjcl.png) 50% 50% no-repeat;
     background-size: cover;
     -webkit-background-size: cover;
     width: 100%;

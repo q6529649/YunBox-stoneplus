@@ -2,7 +2,7 @@
 get_header();
 $theme_options = kadima_get_options();
 ?>
-	<div style="background-image:url(../wps/wp-content/themes/YunBox-stoneplus/images/top.jpg);background-position:center; background-repeat:repeat-y">
+	<div style="background-image:url(./wp-content/themes/kadima/images/top.jpg);background-position:center; background-repeat:repeat-y">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-3" style="background-color: rgba(244, 168, 47, 0.45);width: 20% !important;">

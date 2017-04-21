@@ -1,6 +1,6 @@
 <?php $wl_theme_options = kadima_get_options(); ?>
 <div class="kadima_project_section">
-	<div class="specialty" style="background:url(../wps/wp-content/themes/YunBox-stoneplus/images/grbj2.png) center top no-repeat">
+	<div class="specialty" style="background:url(./wp-content/themes/kadima/images/grbj2.png) center top no-repeat">
 		<div class="container">
 			<div class="col-md-12 specialty-grids" style="    padding-right: 30px;padding-left: 250px;;position: relative;padding-top: 7em;">
 				<?php for($i=1 ; $i<=4; $i++) { ?>						
@@ -13,7 +13,7 @@
 								<div class="bj2" style="float:right;">
 									<img style="padding-top: 66px;" src="<?php echo esc_url($wl_theme_options['port_img_'.$i]); ?>" alt="">
 								</div>
-								<img src="../wps/wp-content/themes/YunBox-stoneplus/images/jt3.png" style="padding-top: 52px;">	
+								<img src="./wp-content/themes/kadima/images/jt3.png" style="padding-top: 52px;">	
 							</div>
 							<div class="col-md-8" style="float:right;padding-top:5px;padding-bottom:5px;float:left;">
 								<h5 style="text-align: center;line-height: 38px;margin-bottom: 0;font-weight: 600;padding:0;margin:0;"><?php echo esc_attr($wl_theme_options['port_title_'.$i]); ?></h5>
@@ -28,7 +28,7 @@
 								<div class="bj2">
 									<img style="padding-top: 66px;" src="<?php echo esc_url($wl_theme_options['port_img_'.$i]); ?>" alt="">
 								</div>
-								<img src="../wps/wp-content/themes/YunBox-stoneplus/images/jt2.png" style="padding-top: 52px;">	
+								<img src="./wp-content/themes/kadima/images/jt2.png" style="padding-top: 52px;">	
 							</div>
 							<div class="col-md-8" style="float:right;padding-top:5px;padding-bottom:5px;">
 								<h5 style="text-align: center;line-height: 38px;margin-bottom: 0;font-weight: 600;padding:0;margin:0;"><?php echo esc_attr($wl_theme_options['port_title_'.$i]); ?></h5>
