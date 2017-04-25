@@ -2966,9 +2966,8 @@ blockquote p {
 .woocommerce div.product .woocommerce-tabs ul.tabs li a {
     font-weight: 400;
     color: #515151;
-    font-size: 2em;
-	text-transform: uppercase;
-	
+    font-size: 1.5em;
+	text-transform: uppercase;	
 }
 .kadima_header_breadcrum_title {
 	background-color:#fff;

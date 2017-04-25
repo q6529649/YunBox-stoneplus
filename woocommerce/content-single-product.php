@@ -38,7 +38,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <div itemscope itemtype="<?php echo woocommerce_get_product_schema(); ?>" id="product-<?php the_ID(); ?>" <?php post_class(); ?>>
 	
-	<div style="background: url(../wps/wp-content/themes/YunBox-stoneplus/images/cpbj.png) no-repeat 50% 100%;text-align: center;background-size: cover;border-bottom: 3px solid #ed1a23;padding-bottom: 40px;padding-top: 60px;">
+	<div style="background: url(//stoneplus.site.yunclever.com/wp-content/themes/kadima/images/cpbj.png) no-repeat 50% 100%;text-align: center;background-size: cover;padding-bottom: 40px;padding-top: 60px;">
 		<div class="container">
 			<?php
 				/*woocommerce_template_single_title();*/

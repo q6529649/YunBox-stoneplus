@@ -15,19 +15,15 @@
  * @package 	WooCommerce/Templates
  * @version     1.6.4
  */
-
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
-
 global $post;
-
 if ( ! $post->post_excerpt ) {
 	return;
 }
-
 ?>
-<div itemprop="description" style="margin-bottom: 1em;">
+<div itemprop="description" class="col-md-9" style="margin-bottom: 1em;">
 	<blockquote>
 		<?php echo apply_filters( 'woocommerce_short_description', $post->post_excerpt ) ?>
 	</blockquote>
