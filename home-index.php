@@ -36,16 +36,19 @@
 			</div>
 		</div>
 	</div>
-	<ul class="slides">
+	<div>
+		<img src="<?php echo esc_url($theme_options['slide_image_1']); ?>" class="img-responsive" alt="<?php echo esc_attr($theme_options['slide_title_1']); ?>">
+	</div>
+	<!--ul class="slides">
 		<?php
-			$theme_options = kadima_get_options(); $j=1;
+			$j=1;
 			for($i=1; $i<=4; $i++){
 		?>
 			<li>
 				<img src="<?php echo esc_url($theme_options['slide_image_'.$i]); ?>" alt="<?php echo esc_attr($theme_options['slide_title_'.$i]); ?>">
 			</li>
 		<?php } ?>
-	</ul>
+	</ul-->
 </div>
 <script>
 	console.log('jquery start.');

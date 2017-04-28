@@ -59,77 +59,17 @@ $piwik = get_option( 'yc_options_piwik' );
 <style type="text/css">
 <?php { echo esc_attr($theme_options['custom_css']); } ?>
 </style>
+<script src="http://statics.yunclever.com/chat/chatWeb.js"></script>
 <script>
-(function () {
-	var blnUid = false;
-	layui.use('layim', function(layim){
-		$ = layui.jquery;
-		var socketfront;
-		var ishttps = 'https:' == document.location.protocol ? true: false;
-		//if(ishttps){
-		//	socketfront = new WebSocket('wss://api.yunclever.com/wss');
-		//}else{
-			socketfront = new WebSocket('ws://im.hn1i2.yunclever.com:8282');
-		//}
-		var layim = layui.layim;
-		layim.config({
-			init: {
-				"mine": {
-				  "username": visitor_id
-				  ,"id": visitor_id
-				  ,"status": "online"
-				  ,"sign": ""
-				  ,"avatar": "//stoneplus.site.yunclever.com/wp-content/themes/kadima/images/ol-logo.png"
-				}
-			}
-			,minRight: "0px"
-			,brief: true
-			,notice: true
-			,copyright: true
-		});  
-		layim.chat({
-			name: 'Online Chat'
-			,type: 'kefu'
-			,avatar: '//stoneplus.site.yunclever.com/wp-content/themes/kadima/images/ol-logo.png'
-			,id: 10000
-		});
-		layim.setChatMin();
-		layim.on('sendMessage', function(res){		
-			socketfront.send( JSON.stringify({
-				type: 'chatMessage'
-				,data: res
-			}));			
-			$.ajax({
-				url: 'https://api.yunclever.com/v2/Public/ybox',
-				type: 'GET',
-				data: {
-					service: 'Chat.saveBySiteId',
-					siteid: <?php echo $piwik['site_id']; ?>,//3,
-					layimJson: JSON.stringify(res),
-					token: '4e7c699f568b248a5430170ba5e9d963'
-				}
-			});
-		});
-		socketfront.onopen = function(){
-			if(!blnUid){		
-				socketfront.send( JSON.stringify({
-					type: 'reg'
-					,data: { uid: visitor_id }
-				}));
-				blnUid = true;		
-			}
-		};
-		socketfront.onmessage = function(res) {
-			rs = JSON.parse(res.data);
-			if(rs.type === 'getMessage'){
-				layim.getMessage(rs.data);
-			}
-		};
-		socketfront.onerror = function(e) {  
-			alert('IM Server Error');
-		}
-	});
-})();
+var checkVisitIdForChat = function (i) {
+	if (!visitor_id && i < 3) {
+		i++;
+		setTimeout(checkVisitIdForChat, 1000);
+	} else {
+		yChatWeb(visitor_id, <?php echo $piwik['site_id']; ?>, 10000, 'rgba(26, 188, 156, 1.0)');
+	}
+};
+checkVisitIdForChat(0);
 </script>
 <?php wp_footer(); ?>
 </body>
